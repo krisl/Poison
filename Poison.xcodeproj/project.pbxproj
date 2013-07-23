@@ -7,129 +7,214 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F50027AC179BA1930071CBE8 /* shiina.icns in Resources */ = {isa = PBXBuildFile; fileRef = F50027AB179BA1930071CBE8 /* shiina.icns */; };
-		F50027AE179BA2FD0071CBE8 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50027B0179BA2FD0071CBE8 /* Preferences.xib */; };
-		F50027B1179BA3030071CBE8 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50027B3179BA3030071CBE8 /* AboutWindow.xib */; };
-		F50027B4179BA3580071CBE8 /* SCConversationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50027B6179BA3580071CBE8 /* SCConversationViewController.xib */; };
-		F50027B7179BA35C0071CBE8 /* SCFriendRequestSheetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50027B9179BA35C0071CBE8 /* SCFriendRequestSheetController.xib */; };
-		F50027BA179BA3600071CBE8 /* SCFriendCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50027BC179BA3600071CBE8 /* SCFriendCellView.xib */; };
-		F50027BD179BA3630071CBE8 /* SCAddFriendSheetController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50027BF179BA3630071CBE8 /* SCAddFriendSheetController.xib */; };
-		F50027C0179BA36A0071CBE8 /* SCMainChatWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50027C2179BA36A0071CBE8 /* SCMainChatWindowController.xib */; };
-		F50027C3179BA36D0071CBE8 /* BootstrapSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50027C5179BA36D0071CBE8 /* BootstrapSheet.xib */; };
-		F5195949179DDB2D008688B5 /* friend_requests.c in Sources */ = {isa = PBXBuildFile; fileRef = F5195947179DDB2D008688B5 /* friend_requests.c */; };
-		F5195958179E2E2D008688B5 /* SCFriendRequestListingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5195957179E2E2D008688B5 /* SCFriendRequestListingController.m */; };
-		F519595C179E2E91008688B5 /* SCFriendRequestListingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F519595A179E2E91008688B5 /* SCFriendRequestListingController.xib */; };
-		F519595F179E3B71008688B5 /* SCRequestCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F519595E179E3B71008688B5 /* SCRequestCellView.m */; };
-		F5195961179E3B98008688B5 /* SCRequestCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5195960179E3B98008688B5 /* SCRequestCellView.xib */; };
-		F53BA02B1795095A00FD552E /* SCFriendRequestSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53BA0291795095A00FD552E /* SCFriendRequestSheetController.m */; };
-		F53CE13B179F052F00835E3E /* SCWhiteChromeBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE13A179F052F00835E3E /* SCWhiteChromeBGView.m */; };
+		F53CE14F179F3BED00835E3E /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE140179F3BEC00835E3E /* AboutWindow.xib */; };
+		F53CE150179F3BED00835E3E /* BootstrapSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE141179F3BED00835E3E /* BootstrapSheet.xib */; };
+		F53CE151179F3BED00835E3E /* General.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE142179F3BED00835E3E /* General.xib */; };
+		F53CE152179F3BED00835E3E /* Interface.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE143179F3BED00835E3E /* Interface.xib */; };
+		F53CE153179F3BED00835E3E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE144179F3BED00835E3E /* MainMenu.xib */; };
+		F53CE154179F3BED00835E3E /* Network.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE145179F3BED00835E3E /* Network.xib */; };
+		F53CE155179F3BED00835E3E /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE146179F3BED00835E3E /* Preferences.xib */; };
+		F53CE156179F3BED00835E3E /* AddFriend.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE147179F3BED00835E3E /* AddFriend.xib */; };
+		F53CE157179F3BED00835E3E /* Conversation.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE148179F3BED00835E3E /* Conversation.xib */; };
+		F53CE158179F3BED00835E3E /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE149179F3BED00835E3E /* FriendCell.xib */; };
+		F53CE159179F3BED00835E3E /* RequestsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE14A179F3BED00835E3E /* RequestsList.xib */; };
+		F53CE15B179F3BED00835E3E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE14C179F3BED00835E3E /* MainWindow.xib */; };
+		F53CE15C179F3BED00835E3E /* RequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE14D179F3BED00835E3E /* RequestCell.xib */; };
+		F53CE15D179F3BED00835E3E /* LoginWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE14E179F3BED00835E3E /* LoginWindow.xib */; };
+		F53CE1B8179F3CF500835E3E /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE166179F3CF400835E3E /* SCAppDelegate.m */; };
+		F53CE1B9179F3CF500835E3E /* SCAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE169179F3CF400835E3E /* SCAboutWindowController.m */; };
+		F53CE1BB179F3CF500835E3E /* SCChromeBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE16F179F3CF400835E3E /* SCChromeBGView.m */; };
+		F53CE1BC179F3CF500835E3E /* SCDarkChromeBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE171179F3CF400835E3E /* SCDarkChromeBGView.m */; };
+		F53CE1BE179F3CF500835E3E /* SCPublicKeyFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE175179F3CF400835E3E /* SCPublicKeyFormatter.m */; };
+		F53CE1BF179F3CF500835E3E /* SCWhiteChromeBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE177179F3CF400835E3E /* SCWhiteChromeBGView.m */; };
+		F53CE1C0179F3CF500835E3E /* SCConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE17A179F3CF400835E3E /* SCConversationViewController.m */; };
+		F53CE1C1179F3CF500835E3E /* SCConversationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE17D179F3CF400835E3E /* SCConversationWindowController.m */; };
+		F53CE1C4179F3CF500835E3E /* SCFriendRequestListingController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE184179F3CF400835E3E /* SCFriendRequestListingController.m */; };
+		F53CE1C5179F3CF500835E3E /* SCRequestCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE186179F3CF400835E3E /* SCRequestCellView.m */; };
+		F53CE1C6179F3CF500835E3E /* SCFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE189179F3CF400835E3E /* SCFlatButton.m */; };
+		F53CE1C7179F3CF500835E3E /* SCWBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE18B179F3CF400835E3E /* SCWBackgroundView.m */; };
+		F53CE1C8179F3CF500835E3E /* SCWelcomeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE18D179F3CF500835E3E /* SCWelcomeWindowController.m */; };
+		F53CE1C9179F3CF500835E3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE18E179F3CF500835E3E /* main.m */; };
+		F53CE1CA179F3CF500835E3E /* SCAddFriendSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE191179F3CF500835E3E /* SCAddFriendSheetController.m */; };
+		F53CE1CB179F3CF500835E3E /* SCBootstrapSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE193179F3CF500835E3E /* SCBootstrapSheetController.m */; };
+		F53CE1CC179F3CF500835E3E /* SCChatBaseBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE195179F3CF500835E3E /* SCChatBaseBackgroundView.m */; };
+		F53CE1CD179F3CF500835E3E /* SCChatStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE197179F3CF500835E3E /* SCChatStatusView.m */; };
+		F53CE1CE179F3CF500835E3E /* SCFriendCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE199179F3CF500835E3E /* SCFriendCellView.m */; };
+		F53CE1CF179F3CF500835E3E /* SCMainChatWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE19B179F3CF500835E3E /* SCMainChatWindowController.m */; };
+		F53CE1D8179F3CF500835E3E /* SCChatContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1A6179F3CF500835E3E /* SCChatContext.m */; };
+		F53CE1D9179F3CF500835E3E /* SCFriendListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1A8179F3CF500835E3E /* SCFriendListManager.m */; };
+		F53CE1DA179F3CF500835E3E /* SCTOXFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1AA179F3CF500835E3E /* SCTOXFriend.m */; };
+		F53CE1DB179F3CF500835E3E /* SCTOXNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1AC179F3CF500835E3E /* SCTOXNetworkConnection.m */; };
+		F53CE1DC179F3CF500835E3E /* SCGeneralPrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1B0179F3CF500835E3E /* SCGeneralPrefPaneController.m */; };
+		F53CE1DD179F3CF500835E3E /* SCInterfacePrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1B2179F3CF500835E3E /* SCInterfacePrefPaneController.m */; };
+		F53CE1DE179F3CF500835E3E /* SCNetworkPrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1B4179F3CF500835E3E /* SCNetworkPrefPaneController.m */; };
+		F53CE1DF179F3CF500835E3E /* SCPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1B6179F3CF500835E3E /* SCPreferencesWindowController.m */; };
+		F53CE1E5179F3D5E00835E3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53CE1E1179F3D5E00835E3E /* InfoPlist.strings */; };
+		F53CE1E6179F3D5E00835E3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53CE1E3179F3D5E00835E3E /* Localizable.strings */; };
+		F53CE1E8179F3DEB00835E3E /* Poison.iconset in Resources */ = {isa = PBXBuildFile; fileRef = F53CE1E7179F3DEB00835E3E /* Poison.iconset */; };
+		F53CE221179F3E5E00835E3E /* DHT.c in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1F2179F3E5E00835E3E /* DHT.c */; };
+		F53CE222179F3E5F00835E3E /* Lossless_UDP.c in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1F4179F3E5E00835E3E /* Lossless_UDP.c */; };
+		F53CE223179F3E5F00835E3E /* Messenger.c in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1F6179F3E5E00835E3E /* Messenger.c */; };
+		F53CE224179F3E5F00835E3E /* friend_requests.c in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1F8179F3E5E00835E3E /* friend_requests.c */; };
+		F53CE225179F3E5F00835E3E /* net_crypto.c in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1FA179F3E5E00835E3E /* net_crypto.c */; };
+		F53CE226179F3E5F00835E3E /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1FC179F3E5E00835E3E /* network.c */; };
+		F53CE29C179F408700835E3E /* about_header.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE291179F408700835E3E /* about_header.png */; };
+		F53CE29D179F408700835E3E /* icon-frequests.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE292179F408700835E3E /* icon-frequests.png */; };
+		F53CE29E179F408700835E3E /* icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE293179F408700835E3E /* icon_info.png */; };
+		F53CE29F179F408700835E3E /* icon_minus.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE294179F408700835E3E /* icon_minus.png */; };
+		F53CE2A0179F408700835E3E /* icon_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE295179F408700835E3E /* icon_plus.png */; };
+		F53CE2A1179F408700835E3E /* icon_smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE296179F408700835E3E /* icon_smiley.png */; };
+		F53CE2A2179F408700835E3E /* login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE297179F408700835E3E /* login_bg.png */; };
+		F53CE2A3179F408700835E3E /* shiina.icns in Resources */ = {isa = PBXBuildFile; fileRef = F53CE298179F408700835E3E /* shiina.icns */; };
+		F53CE2A4179F408700835E3E /* status-light-away.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE299179F408700835E3E /* status-light-away.png */; };
+		F53CE2A5179F408700835E3E /* status-light-offline.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE29A179F408700835E3E /* status-light-offline.png */; };
+		F53CE2A6179F408700835E3E /* status-light-online.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE29B179F408700835E3E /* status-light-online.png */; };
+		F53CE2A9179F409200835E3E /* TranscriptViewBase.html in Resources */ = {isa = PBXBuildFile; fileRef = F53CE2A7179F409200835E3E /* TranscriptViewBase.html */; };
+		F53CE2AA179F409200835E3E /* TranscriptViewBaseAlternate.html in Resources */ = {isa = PBXBuildFile; fileRef = F53CE2A8179F409200835E3E /* TranscriptViewBaseAlternate.html */; };
 		F54268331790E16C0081673D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54268321790E16C0081673D /* Cocoa.framework */; };
-		F542683D1790E16C0081673D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F542683B1790E16C0081673D /* InfoPlist.strings */; };
-		F542683F1790E16C0081673D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F542683E1790E16C0081673D /* main.m */; };
-		F54268431790E16C0081673D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F54268411790E16C0081673D /* Credits.rtf */; };
-		F54268461790E16C0081673D /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F54268451790E16C0081673D /* SCAppDelegate.m */; };
-		F54268491790E16C0081673D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54268471790E16C0081673D /* MainMenu.xib */; };
-		F54268521790EBCE0081673D /* login_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = F54268511790EBCE0081673D /* login_splash.png */; };
-		F542685D1790F4040081673D /* SCWelcomeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F542685B1790F4040081673D /* SCWelcomeWindowController.m */; };
-		F542685E1790F4040081673D /* SCWelcomeWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F542685C1790F4040081673D /* SCWelcomeWindowController.xib */; };
-		F54268611790FCAA0081673D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F542685F1790FCAA0081673D /* Localizable.strings */; };
-		F542E72417975AA000DBFA04 /* SCChatContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F542E72317975AA000DBFA04 /* SCChatContext.m */; };
-		F5440BF8179A36C6004659AF /* SCDarkToolbarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5440BF7179A36C6004659AF /* SCDarkToolbarButton.m */; };
-		F54C6D8E17921A0C00880937 /* SCDarkChromeBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C6D8D17921A0C00880937 /* SCDarkChromeBGView.m */; };
 		F54C6DB717923B1700880937 /* PXListDocumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C6DAC17923B1600880937 /* PXListDocumentView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F54C6DB817923B1700880937 /* PXListView.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C6DAE17923B1700880937 /* PXListView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F54C6DB917923B1700880937 /* PXListView+UserInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C6DB117923B1700880937 /* PXListView+UserInteraction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F54C6DBA17923B1700880937 /* PXListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C6DB317923B1700880937 /* PXListViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		F54F65F0179A514500E49C54 /* icon-frequests.png in Resources */ = {isa = PBXBuildFile; fileRef = F54F65EF179A514500E49C54 /* icon-frequests.png */; };
 		F595D6C4179307B100A6C4D2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595D6C3179307B100A6C4D2 /* WebKit.framework */; };
-		F595D6C6179310BE00A6C4D2 /* TranscriptViewBase.html in Resources */ = {isa = PBXBuildFile; fileRef = F595D6C5179310BE00A6C4D2 /* TranscriptViewBase.html */; };
-		F595D6C9179324E700A6C4D2 /* SCChatBaseBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F595D6C8179324E600A6C4D2 /* SCChatBaseBackgroundView.m */; };
-		F595D6CE179328D800A6C4D2 /* icon_minus.png in Resources */ = {isa = PBXBuildFile; fileRef = F595D6CC179328D800A6C4D2 /* icon_minus.png */; };
-		F595D6CF179328D800A6C4D2 /* icon_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F595D6CD179328D800A6C4D2 /* icon_plus.png */; };
-		F595D6DB179335BC00A6C4D2 /* SCAddFriendSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = F595D6D9179335BC00A6C4D2 /* SCAddFriendSheetController.m */; };
-		F595D6DF17933C5A00A6C4D2 /* SCPublicKeyFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F595D6DE17933C5A00A6C4D2 /* SCPublicKeyFormatter.m */; };
-		F595D6E217934B2100A6C4D2 /* SCChatStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F595D6E117934B2100A6C4D2 /* SCChatStatusView.m */; };
 		F595D6E417934CBF00A6C4D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595D6E317934CBF00A6C4D2 /* QuartzCore.framework */; };
-		F595D6E61793553C00A6C4D2 /* icon_smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = F595D6E51793553C00A6C4D2 /* icon_smiley.png */; };
-		F59AA3C917924F1C00CB27B4 /* login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F59AA3C817924F1C00CB27B4 /* login_bg.png */; };
-		F59AA3CC1792523700CB27B4 /* SCWBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F59AA3CB1792523700CB27B4 /* SCWBackgroundView.m */; };
-		F59AA3CF1792583F00CB27B4 /* SCFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F59AA3CE1792583F00CB27B4 /* SCFlatButton.m */; };
-		F5A6D2C61796016C00A8B451 /* status-light-offline.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A6D2C41796016C00A8B451 /* status-light-offline.png */; };
-		F5A6D2C71796016C00A8B451 /* status-light-online.png in Resources */ = {isa = PBXBuildFile; fileRef = F5A6D2C51796016C00A8B451 /* status-light-online.png */; };
-		F5AB42F3179621A50049BA91 /* SCConversationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5AB42F2179621A50049BA91 /* SCConversationWindowController.m */; };
-		F5AB42F6179640D90049BA91 /* TranscriptViewBaseAlternate.html in Resources */ = {isa = PBXBuildFile; fileRef = F5AB42F5179640D90049BA91 /* TranscriptViewBaseAlternate.html */; };
-		F5C6228E17910D360007BAD1 /* SCMainChatWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5C6228C17910D360007BAD1 /* SCMainChatWindowController.m */; };
-		F5CB87451791C52F00498D08 /* SCChromeBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB87441791C52F00498D08 /* SCChromeBGView.m */; };
-		F5CB87491791CD9000498D08 /* SCTOXNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CB87481791CD9000498D08 /* SCTOXNetworkConnection.m */; };
-		F5CB87561791CED400498D08 /* DHT.c in Sources */ = {isa = PBXBuildFile; fileRef = F5CB874C1791CED400498D08 /* DHT.c */; };
-		F5CB87571791CED400498D08 /* Lossless_UDP.c in Sources */ = {isa = PBXBuildFile; fileRef = F5CB874E1791CED400498D08 /* Lossless_UDP.c */; };
-		F5CB87581791CED400498D08 /* Messenger.c in Sources */ = {isa = PBXBuildFile; fileRef = F5CB87501791CED400498D08 /* Messenger.c */; };
-		F5CB87591791CED400498D08 /* net_crypto.c in Sources */ = {isa = PBXBuildFile; fileRef = F5CB87521791CED400498D08 /* net_crypto.c */; };
-		F5CB875A1791CED400498D08 /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = F5CB87541791CED400498D08 /* network.c */; };
-		F5CD9C241795C28400D22E2A /* SCConversationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CD9C221795C28400D22E2A /* SCConversationViewController.m */; };
-		F5CD9C2C1795CEA900D22E2A /* SCFriendCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CD9C2B1795CEA900D22E2A /* SCFriendCellView.m */; };
-		F5CD9C311795EA0000D22E2A /* SCFriendListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5CD9C301795EA0000D22E2A /* SCFriendListManager.m */; };
-		F5EC99651794988400061109 /* SCBootstrapSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5EC99641794988400061109 /* SCBootstrapSheetController.m */; };
-		F5F15DF01793901E0084CE57 /* about_header.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F15DEF1793901E0084CE57 /* about_header.png */; };
-		F5F15DF51793A0810084CE57 /* SCTOXFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F15DF41793A0810084CE57 /* SCTOXFriend.m */; };
-		F5F1642B179CE56200E2B0B4 /* Poison.iconset in Resources */ = {isa = PBXBuildFile; fileRef = F5F1642A179CE56200E2B0B4 /* Poison.iconset */; };
-		F5F19EFB179C5B68001DA32E /* Interface.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F19EFD179C5B68001DA32E /* Interface.xib */; };
-		F5F19EFE179C5B6C001DA32E /* Network.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F19F00179C5B6C001DA32E /* Network.xib */; };
-		F5F19F01179C5B71001DA32E /* General.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F19F03179C5B71001DA32E /* General.xib */; };
-		F5F19F11179C5F08001DA32E /* SCGeneralPrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F19F0A179C5F08001DA32E /* SCGeneralPrefPaneController.m */; };
-		F5F19F12179C5F08001DA32E /* SCInterfacePrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F19F0C179C5F08001DA32E /* SCInterfacePrefPaneController.m */; };
-		F5F19F13179C5F08001DA32E /* SCNetworkPrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F19F0E179C5F08001DA32E /* SCNetworkPrefPaneController.m */; };
-		F5F19F14179C5F08001DA32E /* SCPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F19F10179C5F08001DA32E /* SCPreferencesWindowController.m */; };
-		F5F19F17179C5F16001DA32E /* SCAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F19F16179C5F16001DA32E /* SCAboutWindowController.m */; };
-		F5F7DBD0179E51300051D066 /* icon_info.png in Resources */ = {isa = PBXBuildFile; fileRef = F5F7DBCF179E51300051D066 /* icon_info.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F50027AB179BA1930071CBE8 /* shiina.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = shiina.icns; sourceTree = "<group>"; };
-		F50027AF179BA2FD0071CBE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Preferences.xib; sourceTree = "<group>"; };
-		F50027B2179BA3030071CBE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AboutWindow.xib; sourceTree = "<group>"; };
-		F50027B5179BA3580071CBE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCConversationViewController.xib; sourceTree = "<group>"; };
-		F50027B8179BA35C0071CBE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCFriendRequestSheetController.xib; sourceTree = "<group>"; };
-		F50027BB179BA3600071CBE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCFriendCellView.xib; sourceTree = "<group>"; };
-		F50027BE179BA3630071CBE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCAddFriendSheetController.xib; sourceTree = "<group>"; };
-		F50027C1179BA36A0071CBE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCMainChatWindowController.xib; sourceTree = "<group>"; };
-		F50027C4179BA36D0071CBE8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BootstrapSheet.xib; sourceTree = "<group>"; };
-		F5195947179DDB2D008688B5 /* friend_requests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = friend_requests.c; path = "ProjectTox-Core/core/friend_requests.c"; sourceTree = SOURCE_ROOT; };
-		F5195948179DDB2D008688B5 /* friend_requests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = friend_requests.h; path = "ProjectTox-Core/core/friend_requests.h"; sourceTree = SOURCE_ROOT; };
-		F5195956179E2E2C008688B5 /* SCFriendRequestListingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCFriendRequestListingController.h; path = UIFriendRequestListing/SCFriendRequestListingController.h; sourceTree = "<group>"; };
-		F5195957179E2E2D008688B5 /* SCFriendRequestListingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCFriendRequestListingController.m; path = UIFriendRequestListing/SCFriendRequestListingController.m; sourceTree = "<group>"; };
-		F519595B179E2E91008688B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = Poison/en.lproj/SCFriendRequestListingController.xib; sourceTree = "<group>"; };
-		F519595D179E3B70008688B5 /* SCRequestCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCRequestCellView.h; path = UIFriendRequestListing/SCRequestCellView.h; sourceTree = "<group>"; };
-		F519595E179E3B71008688B5 /* SCRequestCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCRequestCellView.m; path = UIFriendRequestListing/SCRequestCellView.m; sourceTree = "<group>"; };
-		F5195960179E3B98008688B5 /* SCRequestCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SCRequestCellView.xib; path = UIFriendRequestListing/SCRequestCellView.xib; sourceTree = "<group>"; };
-		F53BA0281795095A00FD552E /* SCFriendRequestSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCFriendRequestSheetController.h; path = UIFriendRequestSheet/SCFriendRequestSheetController.h; sourceTree = "<group>"; };
-		F53BA0291795095A00FD552E /* SCFriendRequestSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCFriendRequestSheetController.m; path = UIFriendRequestSheet/SCFriendRequestSheetController.m; sourceTree = "<group>"; };
-		F53CE139179F052F00835E3E /* SCWhiteChromeBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCWhiteChromeBGView.h; path = UICommon/SCWhiteChromeBGView.h; sourceTree = "<group>"; };
-		F53CE13A179F052F00835E3E /* SCWhiteChromeBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCWhiteChromeBGView.m; path = UICommon/SCWhiteChromeBGView.m; sourceTree = "<group>"; };
+		F53CE140179F3BEC00835E3E /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
+		F53CE141179F3BED00835E3E /* BootstrapSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BootstrapSheet.xib; sourceTree = "<group>"; };
+		F53CE142179F3BED00835E3E /* General.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = General.xib; sourceTree = "<group>"; };
+		F53CE143179F3BED00835E3E /* Interface.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Interface.xib; sourceTree = "<group>"; };
+		F53CE144179F3BED00835E3E /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		F53CE145179F3BED00835E3E /* Network.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Network.xib; sourceTree = "<group>"; };
+		F53CE146179F3BED00835E3E /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		F53CE147179F3BED00835E3E /* AddFriend.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFriend.xib; sourceTree = "<group>"; };
+		F53CE148179F3BED00835E3E /* Conversation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Conversation.xib; sourceTree = "<group>"; };
+		F53CE149179F3BED00835E3E /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
+		F53CE14A179F3BED00835E3E /* RequestsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestsList.xib; sourceTree = "<group>"; };
+		F53CE14C179F3BED00835E3E /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		F53CE14D179F3BED00835E3E /* RequestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestCell.xib; sourceTree = "<group>"; };
+		F53CE14E179F3BED00835E3E /* LoginWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginWindow.xib; sourceTree = "<group>"; };
+		F53CE163179F3CF400835E3E /* Poison-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = "Poison-Info.plist"; path = "code/Poison-Info.plist"; sourceTree = "<group>"; };
+		F53CE164179F3CF400835E3E /* Poison-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Poison-Prefix.pch"; sourceTree = "<group>"; };
+		F53CE165179F3CF400835E3E /* SCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
+		F53CE166179F3CF400835E3E /* SCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
+		F53CE168179F3CF400835E3E /* SCAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAboutWindowController.h; sourceTree = "<group>"; };
+		F53CE169179F3CF400835E3E /* SCAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAboutWindowController.m; sourceTree = "<group>"; };
+		F53CE16E179F3CF400835E3E /* SCChromeBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChromeBGView.h; sourceTree = "<group>"; };
+		F53CE16F179F3CF400835E3E /* SCChromeBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChromeBGView.m; sourceTree = "<group>"; };
+		F53CE170179F3CF400835E3E /* SCDarkChromeBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDarkChromeBGView.h; sourceTree = "<group>"; };
+		F53CE171179F3CF400835E3E /* SCDarkChromeBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDarkChromeBGView.m; sourceTree = "<group>"; };
+		F53CE174179F3CF400835E3E /* SCPublicKeyFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPublicKeyFormatter.h; sourceTree = "<group>"; };
+		F53CE175179F3CF400835E3E /* SCPublicKeyFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPublicKeyFormatter.m; sourceTree = "<group>"; };
+		F53CE176179F3CF400835E3E /* SCWhiteChromeBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWhiteChromeBGView.h; sourceTree = "<group>"; };
+		F53CE177179F3CF400835E3E /* SCWhiteChromeBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWhiteChromeBGView.m; sourceTree = "<group>"; };
+		F53CE179179F3CF400835E3E /* SCConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCConversationViewController.h; sourceTree = "<group>"; };
+		F53CE17A179F3CF400835E3E /* SCConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCConversationViewController.m; sourceTree = "<group>"; };
+		F53CE17C179F3CF400835E3E /* SCConversationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCConversationWindowController.h; sourceTree = "<group>"; };
+		F53CE17D179F3CF400835E3E /* SCConversationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCConversationWindowController.m; sourceTree = "<group>"; };
+		F53CE183179F3CF400835E3E /* SCFriendRequestListingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFriendRequestListingController.h; sourceTree = "<group>"; };
+		F53CE184179F3CF400835E3E /* SCFriendRequestListingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFriendRequestListingController.m; sourceTree = "<group>"; };
+		F53CE185179F3CF400835E3E /* SCRequestCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRequestCellView.h; sourceTree = "<group>"; };
+		F53CE186179F3CF400835E3E /* SCRequestCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRequestCellView.m; sourceTree = "<group>"; };
+		F53CE188179F3CF400835E3E /* SCFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFlatButton.h; sourceTree = "<group>"; };
+		F53CE189179F3CF400835E3E /* SCFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFlatButton.m; sourceTree = "<group>"; };
+		F53CE18A179F3CF400835E3E /* SCWBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWBackgroundView.h; sourceTree = "<group>"; };
+		F53CE18B179F3CF400835E3E /* SCWBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWBackgroundView.m; sourceTree = "<group>"; };
+		F53CE18C179F3CF500835E3E /* SCWelcomeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWelcomeWindowController.h; sourceTree = "<group>"; };
+		F53CE18D179F3CF500835E3E /* SCWelcomeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWelcomeWindowController.m; sourceTree = "<group>"; };
+		F53CE18E179F3CF500835E3E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F53CE190179F3CF500835E3E /* SCAddFriendSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAddFriendSheetController.h; path = ../main_window/SCAddFriendSheetController.h; sourceTree = "<group>"; };
+		F53CE191179F3CF500835E3E /* SCAddFriendSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAddFriendSheetController.m; path = ../main_window/SCAddFriendSheetController.m; sourceTree = "<group>"; };
+		F53CE192179F3CF500835E3E /* SCBootstrapSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBootstrapSheetController.h; sourceTree = "<group>"; };
+		F53CE193179F3CF500835E3E /* SCBootstrapSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBootstrapSheetController.m; sourceTree = "<group>"; };
+		F53CE194179F3CF500835E3E /* SCChatBaseBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCChatBaseBackgroundView.h; path = ../main_window/SCChatBaseBackgroundView.h; sourceTree = "<group>"; };
+		F53CE195179F3CF500835E3E /* SCChatBaseBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCChatBaseBackgroundView.m; path = ../main_window/SCChatBaseBackgroundView.m; sourceTree = "<group>"; };
+		F53CE196179F3CF500835E3E /* SCChatStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCChatStatusView.h; path = ../main_window/SCChatStatusView.h; sourceTree = "<group>"; };
+		F53CE197179F3CF500835E3E /* SCChatStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCChatStatusView.m; path = ../main_window/SCChatStatusView.m; sourceTree = "<group>"; };
+		F53CE198179F3CF500835E3E /* SCFriendCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFriendCellView.h; sourceTree = "<group>"; };
+		F53CE199179F3CF500835E3E /* SCFriendCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFriendCellView.m; sourceTree = "<group>"; };
+		F53CE19A179F3CF500835E3E /* SCMainChatWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMainChatWindowController.h; sourceTree = "<group>"; };
+		F53CE19B179F3CF500835E3E /* SCMainChatWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMainChatWindowController.m; sourceTree = "<group>"; };
+		F53CE1A5179F3CF500835E3E /* SCChatContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChatContext.h; sourceTree = "<group>"; };
+		F53CE1A6179F3CF500835E3E /* SCChatContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChatContext.m; sourceTree = "<group>"; };
+		F53CE1A7179F3CF500835E3E /* SCFriendListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFriendListManager.h; sourceTree = "<group>"; };
+		F53CE1A8179F3CF500835E3E /* SCFriendListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFriendListManager.m; sourceTree = "<group>"; };
+		F53CE1A9179F3CF500835E3E /* SCTOXFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTOXFriend.h; sourceTree = "<group>"; };
+		F53CE1AA179F3CF500835E3E /* SCTOXFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTOXFriend.m; sourceTree = "<group>"; };
+		F53CE1AB179F3CF500835E3E /* SCTOXNetworkConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTOXNetworkConnection.h; sourceTree = "<group>"; };
+		F53CE1AC179F3CF500835E3E /* SCTOXNetworkConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTOXNetworkConnection.m; sourceTree = "<group>"; };
+		F53CE1AF179F3CF500835E3E /* SCGeneralPrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCGeneralPrefPaneController.h; path = ../preferences_window/SCGeneralPrefPaneController.h; sourceTree = "<group>"; };
+		F53CE1B0179F3CF500835E3E /* SCGeneralPrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCGeneralPrefPaneController.m; path = ../preferences_window/SCGeneralPrefPaneController.m; sourceTree = "<group>"; };
+		F53CE1B1179F3CF500835E3E /* SCInterfacePrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCInterfacePrefPaneController.h; path = ../preferences_window/SCInterfacePrefPaneController.h; sourceTree = "<group>"; };
+		F53CE1B2179F3CF500835E3E /* SCInterfacePrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCInterfacePrefPaneController.m; path = ../preferences_window/SCInterfacePrefPaneController.m; sourceTree = "<group>"; };
+		F53CE1B3179F3CF500835E3E /* SCNetworkPrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNetworkPrefPaneController.h; path = ../preferences_window/SCNetworkPrefPaneController.h; sourceTree = "<group>"; };
+		F53CE1B4179F3CF500835E3E /* SCNetworkPrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNetworkPrefPaneController.m; path = ../preferences_window/SCNetworkPrefPaneController.m; sourceTree = "<group>"; };
+		F53CE1B5179F3CF500835E3E /* SCPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPreferencesWindowController.h; sourceTree = "<group>"; };
+		F53CE1B6179F3CF500835E3E /* SCPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPreferencesWindowController.m; sourceTree = "<group>"; };
+		F53CE1E2179F3D5E00835E3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F53CE1E4179F3D5E00835E3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F53CE1E7179F3DEB00835E3E /* Poison.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = Poison.iconset; path = art/Poison.iconset; sourceTree = SOURCE_ROOT; };
+		F53CE1EA179F3E5E00835E3E /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F53CE1EB179F3E5E00835E3E /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		F53CE1EC179F3E5E00835E3E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		F53CE1ED179F3E5E00835E3E /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		F53CE1EE179F3E5E00835E3E /* INSTALL.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL.md; sourceTree = "<group>"; };
+		F53CE1EF179F3E5E00835E3E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		F53CE1F1179F3E5E00835E3E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		F53CE1F2179F3E5E00835E3E /* DHT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DHT.c; sourceTree = "<group>"; };
+		F53CE1F3179F3E5E00835E3E /* DHT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHT.h; sourceTree = "<group>"; };
+		F53CE1F4179F3E5E00835E3E /* Lossless_UDP.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Lossless_UDP.c; sourceTree = "<group>"; };
+		F53CE1F5179F3E5E00835E3E /* Lossless_UDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lossless_UDP.h; sourceTree = "<group>"; };
+		F53CE1F6179F3E5E00835E3E /* Messenger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Messenger.c; sourceTree = "<group>"; };
+		F53CE1F7179F3E5E00835E3E /* Messenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Messenger.h; sourceTree = "<group>"; };
+		F53CE1F8179F3E5E00835E3E /* friend_requests.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = friend_requests.c; sourceTree = "<group>"; };
+		F53CE1F9179F3E5E00835E3E /* friend_requests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = friend_requests.h; sourceTree = "<group>"; };
+		F53CE1FA179F3E5E00835E3E /* net_crypto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net_crypto.c; sourceTree = "<group>"; };
+		F53CE1FB179F3E5E00835E3E /* net_crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_crypto.h; sourceTree = "<group>"; };
+		F53CE1FC179F3E5E00835E3E /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
+		F53CE1FD179F3E5E00835E3E /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = network.h; sourceTree = "<group>"; };
+		F53CE1FF179F3E5E00835E3E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		F53CE200179F3E5E00835E3E /* DHT_bootstrap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DHT_bootstrap.c; sourceTree = "<group>"; };
+		F53CE202179F3E5E00835E3E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		F53CE203179F3E5E00835E3E /* DHT_bootstrap_daemon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DHT_bootstrap_daemon.c; sourceTree = "<group>"; };
+		F53CE204179F3E5E00835E3E /* initscript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = initscript.sh; sourceTree = "<group>"; };
+		F53CE206179F3E5E00835E3E /* DHT_bootstrap.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DHT_bootstrap.cmake; sourceTree = "<group>"; };
+		F53CE208179F3E5E00835E3E /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		F53CE209179F3E5E00835E3E /* DHT_cryptosendfiletest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DHT_cryptosendfiletest.c; sourceTree = "<group>"; };
+		F53CE20A179F3E5E00835E3E /* DHT_sendfiletest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DHT_sendfiletest.c; sourceTree = "<group>"; };
+		F53CE20B179F3E5E00835E3E /* DHT_test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DHT_test.c; sourceTree = "<group>"; };
+		F53CE20C179F3E5E00835E3E /* Lossless_UDP_testclient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Lossless_UDP_testclient.c; sourceTree = "<group>"; };
+		F53CE20D179F3E5E00835E3E /* Lossless_UDP_testserver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Lossless_UDP_testserver.c; sourceTree = "<group>"; };
+		F53CE20E179F3E5E00835E3E /* Messenger_test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Messenger_test.c; sourceTree = "<group>"; };
+		F53CE210179F3E5E00835E3E /* DHT_cryptosendfiletest.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DHT_cryptosendfiletest.cmake; sourceTree = "<group>"; };
+		F53CE211179F3E5E00835E3E /* DHT_sendfiletest.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DHT_sendfiletest.cmake; sourceTree = "<group>"; };
+		F53CE212179F3E5E00835E3E /* DHT_test.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DHT_test.cmake; sourceTree = "<group>"; };
+		F53CE213179F3E5E00835E3E /* Lossless_UDP_testclient.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lossless_UDP_testclient.cmake; sourceTree = "<group>"; };
+		F53CE214179F3E5E00835E3E /* Lossless_UDP_testserver.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lossless_UDP_testserver.cmake; sourceTree = "<group>"; };
+		F53CE215179F3E5E00835E3E /* Messenger_test.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Messenger_test.cmake; sourceTree = "<group>"; };
+		F53CE216179F3E5E00835E3E /* nTox.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nTox.cmake; sourceTree = "<group>"; };
+		F53CE217179F3E5E00835E3E /* nTox.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = nTox.c; sourceTree = "<group>"; };
+		F53CE218179F3E5E00835E3E /* nTox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nTox.h; sourceTree = "<group>"; };
+		F53CE219179F3E5E00835E3E /* rect.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = rect.py; sourceTree = "<group>"; };
+		F53CE291179F408700835E3E /* about_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_header.png; sourceTree = "<group>"; };
+		F53CE292179F408700835E3E /* icon-frequests.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-frequests.png"; sourceTree = "<group>"; };
+		F53CE293179F408700835E3E /* icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_info.png; sourceTree = "<group>"; };
+		F53CE294179F408700835E3E /* icon_minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_minus.png; sourceTree = "<group>"; };
+		F53CE295179F408700835E3E /* icon_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_plus.png; sourceTree = "<group>"; };
+		F53CE296179F408700835E3E /* icon_smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_smiley.png; sourceTree = "<group>"; };
+		F53CE297179F408700835E3E /* login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_bg.png; sourceTree = "<group>"; };
+		F53CE298179F408700835E3E /* shiina.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = shiina.icns; sourceTree = "<group>"; };
+		F53CE299179F408700835E3E /* status-light-away.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-light-away.png"; sourceTree = "<group>"; };
+		F53CE29A179F408700835E3E /* status-light-offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-light-offline.png"; sourceTree = "<group>"; };
+		F53CE29B179F408700835E3E /* status-light-online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-light-online.png"; sourceTree = "<group>"; };
+		F53CE2A7179F409200835E3E /* TranscriptViewBase.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TranscriptViewBase.html; sourceTree = SOURCE_ROOT; };
+		F53CE2A8179F409200835E3E /* TranscriptViewBaseAlternate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = TranscriptViewBaseAlternate.html; sourceTree = SOURCE_ROOT; };
 		F542682F1790E16C0081673D /* Poison.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poison.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54268321790E16C0081673D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F54268351790E16C0081673D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		F54268361790E16C0081673D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F54268371790E16C0081673D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F542683A1790E16C0081673D /* Poison-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Poison-Info.plist"; sourceTree = "<group>"; };
-		F542683C1790E16C0081673D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F542683E1790E16C0081673D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F54268401790E16C0081673D /* Poison-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Poison-Prefix.pch"; sourceTree = "<group>"; };
-		F54268421790E16C0081673D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		F54268441790E16C0081673D /* SCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
-		F54268451790E16C0081673D /* SCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAppDelegate.m; sourceTree = "<group>"; };
-		F54268481790E16C0081673D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		F54268511790EBCE0081673D /* login_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_splash.png; sourceTree = "<group>"; };
-		F542685A1790F4040081673D /* SCWelcomeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCWelcomeWindowController.h; path = UIWelcomeWindow/SCWelcomeWindowController.h; sourceTree = "<group>"; };
-		F542685B1790F4040081673D /* SCWelcomeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCWelcomeWindowController.m; path = UIWelcomeWindow/SCWelcomeWindowController.m; sourceTree = "<group>"; };
-		F542685C1790F4040081673D /* SCWelcomeWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SCWelcomeWindowController.xib; path = UIWelcomeWindow/SCWelcomeWindowController.xib; sourceTree = "<group>"; };
-		F54268601790FCAA0081673D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		F542E72217975AA000DBFA04 /* SCChatContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCChatContext.h; path = Networking/SCChatContext.h; sourceTree = "<group>"; };
-		F542E72317975AA000DBFA04 /* SCChatContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCChatContext.m; path = Networking/SCChatContext.m; sourceTree = "<group>"; };
-		F5440BF6179A36C6004659AF /* SCDarkToolbarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCDarkToolbarButton.h; path = UICommon/SCDarkToolbarButton.h; sourceTree = "<group>"; };
-		F5440BF7179A36C6004659AF /* SCDarkToolbarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCDarkToolbarButton.m; path = UICommon/SCDarkToolbarButton.m; sourceTree = "<group>"; };
-		F54C6D8C17921A0C00880937 /* SCDarkChromeBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCDarkChromeBGView.h; path = UICommon/SCDarkChromeBGView.h; sourceTree = "<group>"; };
-		F54C6D8D17921A0C00880937 /* SCDarkChromeBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCDarkChromeBGView.m; path = UICommon/SCDarkChromeBGView.m; sourceTree = "<group>"; };
 		F54C6DAB17923B1600880937 /* PXListDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PXListDocumentView.h; path = PXListView/Classes/PXListDocumentView.h; sourceTree = SOURCE_ROOT; };
 		F54C6DAC17923B1600880937 /* PXListDocumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PXListDocumentView.m; path = PXListView/Classes/PXListDocumentView.m; sourceTree = SOURCE_ROOT; };
 		F54C6DAD17923B1700880937 /* PXListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PXListView.h; path = PXListView/Classes/PXListView.h; sourceTree = SOURCE_ROOT; };
@@ -142,73 +227,8 @@
 		F54C6DB417923B1700880937 /* PXListViewCell+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PXListViewCell+Private.h"; path = "PXListView/Classes/PXListViewCell+Private.h"; sourceTree = SOURCE_ROOT; };
 		F54C6DB517923B1700880937 /* PXListViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PXListViewDelegate.h; path = PXListView/Classes/PXListViewDelegate.h; sourceTree = SOURCE_ROOT; };
 		F54C6DB617923B1700880937 /* PXListViewDropHighlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PXListViewDropHighlight.h; path = PXListView/Classes/PXListViewDropHighlight.h; sourceTree = SOURCE_ROOT; };
-		F54F65EF179A514500E49C54 /* icon-frequests.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-frequests.png"; sourceTree = "<group>"; };
 		F595D6C3179307B100A6C4D2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		F595D6C5179310BE00A6C4D2 /* TranscriptViewBase.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = TranscriptViewBase.html; path = Poison/UIChatWindow/TranscriptViewBase.html; sourceTree = "<group>"; };
-		F595D6C7179324E600A6C4D2 /* SCChatBaseBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCChatBaseBackgroundView.h; path = Poison/UIChatWindow/SCChatBaseBackgroundView.h; sourceTree = "<group>"; };
-		F595D6C8179324E600A6C4D2 /* SCChatBaseBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCChatBaseBackgroundView.m; path = Poison/UIChatWindow/SCChatBaseBackgroundView.m; sourceTree = "<group>"; };
-		F595D6CC179328D800A6C4D2 /* icon_minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_minus.png; path = UIChatWindow/icon_minus.png; sourceTree = "<group>"; };
-		F595D6CD179328D800A6C4D2 /* icon_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_plus.png; path = UIChatWindow/icon_plus.png; sourceTree = "<group>"; };
-		F595D6D8179335BC00A6C4D2 /* SCAddFriendSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAddFriendSheetController.h; path = UIChatWindow/SCAddFriendSheetController.h; sourceTree = "<group>"; };
-		F595D6D9179335BC00A6C4D2 /* SCAddFriendSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAddFriendSheetController.m; path = UIChatWindow/SCAddFriendSheetController.m; sourceTree = "<group>"; };
-		F595D6DD17933C5A00A6C4D2 /* SCPublicKeyFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPublicKeyFormatter.h; path = UICommon/SCPublicKeyFormatter.h; sourceTree = "<group>"; };
-		F595D6DE17933C5A00A6C4D2 /* SCPublicKeyFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPublicKeyFormatter.m; path = UICommon/SCPublicKeyFormatter.m; sourceTree = "<group>"; };
-		F595D6E017934B2100A6C4D2 /* SCChatStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCChatStatusView.h; path = Poison/UIChatWindow/SCChatStatusView.h; sourceTree = "<group>"; };
-		F595D6E117934B2100A6C4D2 /* SCChatStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCChatStatusView.m; path = Poison/UIChatWindow/SCChatStatusView.m; sourceTree = "<group>"; };
 		F595D6E317934CBF00A6C4D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		F595D6E51793553C00A6C4D2 /* icon_smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_smiley.png; path = UIChatWindow/icon_smiley.png; sourceTree = "<group>"; };
-		F59AA3C817924F1C00CB27B4 /* login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_bg.png; sourceTree = "<group>"; };
-		F59AA3CA1792523700CB27B4 /* SCWBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCWBackgroundView.h; path = UIWelcomeWindow/SCWBackgroundView.h; sourceTree = "<group>"; };
-		F59AA3CB1792523700CB27B4 /* SCWBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCWBackgroundView.m; path = UIWelcomeWindow/SCWBackgroundView.m; sourceTree = "<group>"; };
-		F59AA3CD1792583F00CB27B4 /* SCFlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCFlatButton.h; path = UIWelcomeWindow/SCFlatButton.h; sourceTree = "<group>"; };
-		F59AA3CE1792583F00CB27B4 /* SCFlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCFlatButton.m; path = UIWelcomeWindow/SCFlatButton.m; sourceTree = "<group>"; };
-		F5A6D2C41796016C00A8B451 /* status-light-offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "status-light-offline.png"; path = "UIChatWindow/status-light-offline.png"; sourceTree = "<group>"; };
-		F5A6D2C51796016C00A8B451 /* status-light-online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "status-light-online.png"; path = "UIChatWindow/status-light-online.png"; sourceTree = "<group>"; };
-		F5AB42F1179621A50049BA91 /* SCConversationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCConversationWindowController.h; path = UIConversationWindow/SCConversationWindowController.h; sourceTree = "<group>"; };
-		F5AB42F2179621A50049BA91 /* SCConversationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCConversationWindowController.m; path = UIConversationWindow/SCConversationWindowController.m; sourceTree = "<group>"; };
-		F5AB42F5179640D90049BA91 /* TranscriptViewBaseAlternate.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = TranscriptViewBaseAlternate.html; path = Poison/UIChatWindow/TranscriptViewBaseAlternate.html; sourceTree = "<group>"; };
-		F5C6228B17910D360007BAD1 /* SCMainChatWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCMainChatWindowController.h; path = UIChatWindow/SCMainChatWindowController.h; sourceTree = "<group>"; };
-		F5C6228C17910D360007BAD1 /* SCMainChatWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCMainChatWindowController.m; path = UIChatWindow/SCMainChatWindowController.m; sourceTree = "<group>"; };
-		F5CB87431791C52F00498D08 /* SCChromeBGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCChromeBGView.h; path = UICommon/SCChromeBGView.h; sourceTree = "<group>"; };
-		F5CB87441791C52F00498D08 /* SCChromeBGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCChromeBGView.m; path = UICommon/SCChromeBGView.m; sourceTree = "<group>"; };
-		F5CB87471791CD9000498D08 /* SCTOXNetworkConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTOXNetworkConnection.h; path = Networking/SCTOXNetworkConnection.h; sourceTree = "<group>"; };
-		F5CB87481791CD9000498D08 /* SCTOXNetworkConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTOXNetworkConnection.m; path = Networking/SCTOXNetworkConnection.m; sourceTree = "<group>"; };
-		F5CB874C1791CED400498D08 /* DHT.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DHT.c; path = "ProjectTox-Core/core/DHT.c"; sourceTree = SOURCE_ROOT; };
-		F5CB874D1791CED400498D08 /* DHT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DHT.h; path = "ProjectTox-Core/core/DHT.h"; sourceTree = SOURCE_ROOT; };
-		F5CB874E1791CED400498D08 /* Lossless_UDP.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Lossless_UDP.c; path = "ProjectTox-Core/core/Lossless_UDP.c"; sourceTree = SOURCE_ROOT; };
-		F5CB874F1791CED400498D08 /* Lossless_UDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lossless_UDP.h; path = "ProjectTox-Core/core/Lossless_UDP.h"; sourceTree = SOURCE_ROOT; };
-		F5CB87501791CED400498D08 /* Messenger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Messenger.c; path = "ProjectTox-Core/core/Messenger.c"; sourceTree = SOURCE_ROOT; };
-		F5CB87511791CED400498D08 /* Messenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Messenger.h; path = "ProjectTox-Core/core/Messenger.h"; sourceTree = SOURCE_ROOT; };
-		F5CB87521791CED400498D08 /* net_crypto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = net_crypto.c; path = "ProjectTox-Core/core/net_crypto.c"; sourceTree = SOURCE_ROOT; };
-		F5CB87531791CED400498D08 /* net_crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net_crypto.h; path = "ProjectTox-Core/core/net_crypto.h"; sourceTree = SOURCE_ROOT; };
-		F5CB87541791CED400498D08 /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = network.c; path = "ProjectTox-Core/core/network.c"; sourceTree = SOURCE_ROOT; };
-		F5CB87551791CED400498D08 /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = network.h; path = "ProjectTox-Core/core/network.h"; sourceTree = SOURCE_ROOT; };
-		F5CD9C211795C28400D22E2A /* SCConversationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCConversationViewController.h; path = Poison/UIConversationView/SCConversationViewController.h; sourceTree = "<group>"; };
-		F5CD9C221795C28400D22E2A /* SCConversationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCConversationViewController.m; path = Poison/UIConversationView/SCConversationViewController.m; sourceTree = "<group>"; };
-		F5CD9C2A1795CEA900D22E2A /* SCFriendCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCFriendCellView.h; path = UIChatWindow/SCFriendCellView.h; sourceTree = "<group>"; };
-		F5CD9C2B1795CEA900D22E2A /* SCFriendCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCFriendCellView.m; path = UIChatWindow/SCFriendCellView.m; sourceTree = "<group>"; };
-		F5CD9C2F1795EA0000D22E2A /* SCFriendListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCFriendListManager.h; path = Networking/SCFriendListManager.h; sourceTree = "<group>"; };
-		F5CD9C301795EA0000D22E2A /* SCFriendListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCFriendListManager.m; path = Networking/SCFriendListManager.m; sourceTree = "<group>"; };
-		F5EC99631794988400061109 /* SCBootstrapSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCBootstrapSheetController.h; path = UIChatWindow/SCBootstrapSheetController.h; sourceTree = "<group>"; };
-		F5EC99641794988400061109 /* SCBootstrapSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCBootstrapSheetController.m; path = UIChatWindow/SCBootstrapSheetController.m; sourceTree = "<group>"; };
-		F5F15DEF1793901E0084CE57 /* about_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_header.png; sourceTree = "<group>"; };
-		F5F15DF31793A0810084CE57 /* SCTOXFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCTOXFriend.h; path = Networking/SCTOXFriend.h; sourceTree = "<group>"; };
-		F5F15DF41793A0810084CE57 /* SCTOXFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCTOXFriend.m; path = Networking/SCTOXFriend.m; sourceTree = "<group>"; };
-		F5F1642A179CE56200E2B0B4 /* Poison.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Poison.iconset; sourceTree = "<group>"; };
-		F5F19EFC179C5B68001DA32E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Interface.xib; sourceTree = "<group>"; };
-		F5F19EFF179C5B6C001DA32E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Network.xib; sourceTree = "<group>"; };
-		F5F19F02179C5B71001DA32E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/General.xib; sourceTree = "<group>"; };
-		F5F19F09179C5F08001DA32E /* SCGeneralPrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCGeneralPrefPaneController.h; path = Poison/UIPreferencesWindow/SCGeneralPrefPaneController.h; sourceTree = "<group>"; };
-		F5F19F0A179C5F08001DA32E /* SCGeneralPrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCGeneralPrefPaneController.m; path = Poison/UIPreferencesWindow/SCGeneralPrefPaneController.m; sourceTree = "<group>"; };
-		F5F19F0B179C5F08001DA32E /* SCInterfacePrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCInterfacePrefPaneController.h; path = Poison/UIPreferencesWindow/SCInterfacePrefPaneController.h; sourceTree = "<group>"; };
-		F5F19F0C179C5F08001DA32E /* SCInterfacePrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCInterfacePrefPaneController.m; path = Poison/UIPreferencesWindow/SCInterfacePrefPaneController.m; sourceTree = "<group>"; };
-		F5F19F0D179C5F08001DA32E /* SCNetworkPrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNetworkPrefPaneController.h; path = Poison/UIPreferencesWindow/SCNetworkPrefPaneController.h; sourceTree = "<group>"; };
-		F5F19F0E179C5F08001DA32E /* SCNetworkPrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNetworkPrefPaneController.m; path = Poison/UIPreferencesWindow/SCNetworkPrefPaneController.m; sourceTree = "<group>"; };
-		F5F19F0F179C5F08001DA32E /* SCPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCPreferencesWindowController.h; path = Poison/UIPreferencesWindow/SCPreferencesWindowController.h; sourceTree = "<group>"; };
-		F5F19F10179C5F08001DA32E /* SCPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCPreferencesWindowController.m; path = Poison/UIPreferencesWindow/SCPreferencesWindowController.m; sourceTree = "<group>"; };
-		F5F19F15179C5F16001DA32E /* SCAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAboutWindowController.h; path = UIAboutWindow/SCAboutWindowController.h; sourceTree = "<group>"; };
-		F5F19F16179C5F16001DA32E /* SCAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAboutWindowController.m; path = UIAboutWindow/SCAboutWindowController.m; sourceTree = "<group>"; };
-		F5F7DBCF179E51300051D066 /* icon_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_info.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,21 +245,349 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F5195959179E2E32008688B5 /* Friend Requests Window */ = {
+		F53CE13D179F3B6E00835E3E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F519595D179E3B70008688B5 /* SCRequestCellView.h */,
-				F519595E179E3B71008688B5 /* SCRequestCellView.m */,
-				F5195956179E2E2C008688B5 /* SCFriendRequestListingController.h */,
-				F5195957179E2E2D008688B5 /* SCFriendRequestListingController.m */,
+				F53CE290179F408700835E3E /* Images */,
+				F53CE163179F3CF400835E3E /* Poison-Info.plist */,
+				F53CE1E7179F3DEB00835E3E /* Poison.iconset */,
+				F53CE2A7179F409200835E3E /* TranscriptViewBase.html */,
+				F53CE2A8179F409200835E3E /* TranscriptViewBaseAlternate.html */,
+				F53CE1E0179F3D5D00835E3E /* Localizable */,
 			);
-			name = "Friend Requests Window";
+			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		F53CE13F179F3BEC00835E3E /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE161179F3C6400835E3E /* Windows */,
+				F53CE15F179F3C4500835E3E /* Sheets */,
+				F53CE15E179F3C1400835E3E /* Preference Panes */,
+				F53CE144179F3BED00835E3E /* MainMenu.xib */,
+				F53CE148179F3BED00835E3E /* Conversation.xib */,
+				F53CE149179F3BED00835E3E /* FriendCell.xib */,
+				F53CE14D179F3BED00835E3E /* RequestCell.xib */,
+			);
+			name = XIBs;
+			path = interfaces;
+			sourceTree = SOURCE_ROOT;
+		};
+		F53CE15E179F3C1400835E3E /* Preference Panes */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE142179F3BED00835E3E /* General.xib */,
+				F53CE143179F3BED00835E3E /* Interface.xib */,
+				F53CE145179F3BED00835E3E /* Network.xib */,
+			);
+			name = "Preference Panes";
+			sourceTree = "<group>";
+		};
+		F53CE15F179F3C4500835E3E /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE141179F3BED00835E3E /* BootstrapSheet.xib */,
+				F53CE147179F3BED00835E3E /* AddFriend.xib */,
+				F53CE14A179F3BED00835E3E /* RequestsList.xib */,
+			);
+			name = Sheets;
+			sourceTree = "<group>";
+		};
+		F53CE161179F3C6400835E3E /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE140179F3BEC00835E3E /* AboutWindow.xib */,
+				F53CE146179F3BED00835E3E /* Preferences.xib */,
+				F53CE14C179F3BED00835E3E /* MainWindow.xib */,
+				F53CE14E179F3BED00835E3E /* LoginWindow.xib */,
+			);
+			name = Windows;
+			sourceTree = "<group>";
+		};
+		F53CE162179F3CF400835E3E /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE164179F3CF400835E3E /* Poison-Prefix.pch */,
+				F53CE165179F3CF400835E3E /* SCAppDelegate.h */,
+				F53CE166179F3CF400835E3E /* SCAppDelegate.m */,
+				F53CE18E179F3CF500835E3E /* main.m */,
+				F53CE167179F3CF400835E3E /* about_window */,
+				F53CE16A179F3CF400835E3E /* add_friend */,
+				F53CE16D179F3CF400835E3E /* common */,
+				F53CE178179F3CF400835E3E /* conversation_view */,
+				F53CE17B179F3CF400835E3E /* conversation_window */,
+				F53CE182179F3CF400835E3E /* friend_requests */,
+				F53CE187179F3CF400835E3E /* login_window */,
+				F53CE18F179F3CF500835E3E /* main_window */,
+				F53CE1A4179F3CF500835E3E /* networking */,
+				F53CE1AD179F3CF500835E3E /* preference_panes */,
+				F53CE1AE179F3CF500835E3E /* preferences_window */,
+			);
+			name = Code;
+			path = code;
+			sourceTree = SOURCE_ROOT;
+		};
+		F53CE167179F3CF400835E3E /* about_window */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE168179F3CF400835E3E /* SCAboutWindowController.h */,
+				F53CE169179F3CF400835E3E /* SCAboutWindowController.m */,
+			);
+			path = about_window;
+			sourceTree = "<group>";
+		};
+		F53CE16A179F3CF400835E3E /* add_friend */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE190179F3CF500835E3E /* SCAddFriendSheetController.h */,
+				F53CE191179F3CF500835E3E /* SCAddFriendSheetController.m */,
+			);
+			path = add_friend;
+			sourceTree = "<group>";
+		};
+		F53CE16D179F3CF400835E3E /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE16E179F3CF400835E3E /* SCChromeBGView.h */,
+				F53CE16F179F3CF400835E3E /* SCChromeBGView.m */,
+				F53CE170179F3CF400835E3E /* SCDarkChromeBGView.h */,
+				F53CE171179F3CF400835E3E /* SCDarkChromeBGView.m */,
+				F53CE174179F3CF400835E3E /* SCPublicKeyFormatter.h */,
+				F53CE175179F3CF400835E3E /* SCPublicKeyFormatter.m */,
+				F53CE176179F3CF400835E3E /* SCWhiteChromeBGView.h */,
+				F53CE177179F3CF400835E3E /* SCWhiteChromeBGView.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F53CE178179F3CF400835E3E /* conversation_view */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE194179F3CF500835E3E /* SCChatBaseBackgroundView.h */,
+				F53CE195179F3CF500835E3E /* SCChatBaseBackgroundView.m */,
+				F53CE196179F3CF500835E3E /* SCChatStatusView.h */,
+				F53CE197179F3CF500835E3E /* SCChatStatusView.m */,
+				F53CE179179F3CF400835E3E /* SCConversationViewController.h */,
+				F53CE17A179F3CF400835E3E /* SCConversationViewController.m */,
+			);
+			path = conversation_view;
+			sourceTree = "<group>";
+		};
+		F53CE17B179F3CF400835E3E /* conversation_window */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE17C179F3CF400835E3E /* SCConversationWindowController.h */,
+				F53CE17D179F3CF400835E3E /* SCConversationWindowController.m */,
+			);
+			path = conversation_window;
+			sourceTree = "<group>";
+		};
+		F53CE182179F3CF400835E3E /* friend_requests */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE183179F3CF400835E3E /* SCFriendRequestListingController.h */,
+				F53CE184179F3CF400835E3E /* SCFriendRequestListingController.m */,
+				F53CE185179F3CF400835E3E /* SCRequestCellView.h */,
+				F53CE186179F3CF400835E3E /* SCRequestCellView.m */,
+			);
+			path = friend_requests;
+			sourceTree = "<group>";
+		};
+		F53CE187179F3CF400835E3E /* login_window */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE188179F3CF400835E3E /* SCFlatButton.h */,
+				F53CE189179F3CF400835E3E /* SCFlatButton.m */,
+				F53CE18A179F3CF400835E3E /* SCWBackgroundView.h */,
+				F53CE18B179F3CF400835E3E /* SCWBackgroundView.m */,
+				F53CE18C179F3CF500835E3E /* SCWelcomeWindowController.h */,
+				F53CE18D179F3CF500835E3E /* SCWelcomeWindowController.m */,
+			);
+			path = login_window;
+			sourceTree = "<group>";
+		};
+		F53CE18F179F3CF500835E3E /* main_window */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE192179F3CF500835E3E /* SCBootstrapSheetController.h */,
+				F53CE193179F3CF500835E3E /* SCBootstrapSheetController.m */,
+				F53CE198179F3CF500835E3E /* SCFriendCellView.h */,
+				F53CE199179F3CF500835E3E /* SCFriendCellView.m */,
+				F53CE19A179F3CF500835E3E /* SCMainChatWindowController.h */,
+				F53CE19B179F3CF500835E3E /* SCMainChatWindowController.m */,
+			);
+			path = main_window;
+			sourceTree = "<group>";
+		};
+		F53CE1A4179F3CF500835E3E /* networking */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE1A5179F3CF500835E3E /* SCChatContext.h */,
+				F53CE1A6179F3CF500835E3E /* SCChatContext.m */,
+				F53CE1A7179F3CF500835E3E /* SCFriendListManager.h */,
+				F53CE1A8179F3CF500835E3E /* SCFriendListManager.m */,
+				F53CE1A9179F3CF500835E3E /* SCTOXFriend.h */,
+				F53CE1AA179F3CF500835E3E /* SCTOXFriend.m */,
+				F53CE1AB179F3CF500835E3E /* SCTOXNetworkConnection.h */,
+				F53CE1AC179F3CF500835E3E /* SCTOXNetworkConnection.m */,
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+		F53CE1AD179F3CF500835E3E /* preference_panes */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE1AF179F3CF500835E3E /* SCGeneralPrefPaneController.h */,
+				F53CE1B0179F3CF500835E3E /* SCGeneralPrefPaneController.m */,
+				F53CE1B1179F3CF500835E3E /* SCInterfacePrefPaneController.h */,
+				F53CE1B2179F3CF500835E3E /* SCInterfacePrefPaneController.m */,
+				F53CE1B3179F3CF500835E3E /* SCNetworkPrefPaneController.h */,
+				F53CE1B4179F3CF500835E3E /* SCNetworkPrefPaneController.m */,
+			);
+			path = preference_panes;
+			sourceTree = "<group>";
+		};
+		F53CE1AE179F3CF500835E3E /* preferences_window */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE1B5179F3CF500835E3E /* SCPreferencesWindowController.h */,
+				F53CE1B6179F3CF500835E3E /* SCPreferencesWindowController.m */,
+			);
+			path = preferences_window;
+			sourceTree = "<group>";
+		};
+		F53CE1E0179F3D5D00835E3E /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE1E1179F3D5E00835E3E /* InfoPlist.strings */,
+				F53CE1E3179F3D5E00835E3E /* Localizable.strings */,
+			);
+			name = Localizable;
+			path = localizable;
+			sourceTree = SOURCE_ROOT;
+		};
+		F53CE1E9179F3E5E00835E3E /* ProjectTox-Core */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE1EA179F3E5E00835E3E /* .gitignore */,
+				F53CE1EB179F3E5E00835E3E /* .travis.yml */,
+				F53CE1EC179F3E5E00835E3E /* CMakeLists.txt */,
+				F53CE1ED179F3E5E00835E3E /* COPYING */,
+				F53CE1EE179F3E5E00835E3E /* INSTALL.md */,
+				F53CE1EF179F3E5E00835E3E /* README.md */,
+				F53CE1F0179F3E5E00835E3E /* core */,
+				F53CE1FE179F3E5E00835E3E /* other */,
+				F53CE207179F3E5E00835E3E /* testing */,
+			);
+			path = "ProjectTox-Core";
+			sourceTree = "<group>";
+		};
+		F53CE1F0179F3E5E00835E3E /* core */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE1F1179F3E5E00835E3E /* CMakeLists.txt */,
+				F53CE1F2179F3E5E00835E3E /* DHT.c */,
+				F53CE1F3179F3E5E00835E3E /* DHT.h */,
+				F53CE1F4179F3E5E00835E3E /* Lossless_UDP.c */,
+				F53CE1F5179F3E5E00835E3E /* Lossless_UDP.h */,
+				F53CE1F6179F3E5E00835E3E /* Messenger.c */,
+				F53CE1F7179F3E5E00835E3E /* Messenger.h */,
+				F53CE1F8179F3E5E00835E3E /* friend_requests.c */,
+				F53CE1F9179F3E5E00835E3E /* friend_requests.h */,
+				F53CE1FA179F3E5E00835E3E /* net_crypto.c */,
+				F53CE1FB179F3E5E00835E3E /* net_crypto.h */,
+				F53CE1FC179F3E5E00835E3E /* network.c */,
+				F53CE1FD179F3E5E00835E3E /* network.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		F53CE1FE179F3E5E00835E3E /* other */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE1FF179F3E5E00835E3E /* CMakeLists.txt */,
+				F53CE200179F3E5E00835E3E /* DHT_bootstrap.c */,
+				F53CE201179F3E5E00835E3E /* bootstrap_serverdaemon */,
+				F53CE205179F3E5E00835E3E /* cmake */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		F53CE201179F3E5E00835E3E /* bootstrap_serverdaemon */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE202179F3E5E00835E3E /* CMakeLists.txt */,
+				F53CE203179F3E5E00835E3E /* DHT_bootstrap_daemon.c */,
+				F53CE204179F3E5E00835E3E /* initscript.sh */,
+			);
+			path = bootstrap_serverdaemon;
+			sourceTree = "<group>";
+		};
+		F53CE205179F3E5E00835E3E /* cmake */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE206179F3E5E00835E3E /* DHT_bootstrap.cmake */,
+			);
+			path = cmake;
+			sourceTree = "<group>";
+		};
+		F53CE207179F3E5E00835E3E /* testing */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE208179F3E5E00835E3E /* CMakeLists.txt */,
+				F53CE209179F3E5E00835E3E /* DHT_cryptosendfiletest.c */,
+				F53CE20A179F3E5E00835E3E /* DHT_sendfiletest.c */,
+				F53CE20B179F3E5E00835E3E /* DHT_test.c */,
+				F53CE20C179F3E5E00835E3E /* Lossless_UDP_testclient.c */,
+				F53CE20D179F3E5E00835E3E /* Lossless_UDP_testserver.c */,
+				F53CE20E179F3E5E00835E3E /* Messenger_test.c */,
+				F53CE20F179F3E5E00835E3E /* cmake */,
+				F53CE217179F3E5E00835E3E /* nTox.c */,
+				F53CE218179F3E5E00835E3E /* nTox.h */,
+				F53CE219179F3E5E00835E3E /* rect.py */,
+			);
+			path = testing;
+			sourceTree = "<group>";
+		};
+		F53CE20F179F3E5E00835E3E /* cmake */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE210179F3E5E00835E3E /* DHT_cryptosendfiletest.cmake */,
+				F53CE211179F3E5E00835E3E /* DHT_sendfiletest.cmake */,
+				F53CE212179F3E5E00835E3E /* DHT_test.cmake */,
+				F53CE213179F3E5E00835E3E /* Lossless_UDP_testclient.cmake */,
+				F53CE214179F3E5E00835E3E /* Lossless_UDP_testserver.cmake */,
+				F53CE215179F3E5E00835E3E /* Messenger_test.cmake */,
+				F53CE216179F3E5E00835E3E /* nTox.cmake */,
+			);
+			path = cmake;
+			sourceTree = "<group>";
+		};
+		F53CE290179F408700835E3E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F53CE291179F408700835E3E /* about_header.png */,
+				F53CE292179F408700835E3E /* icon-frequests.png */,
+				F53CE293179F408700835E3E /* icon_info.png */,
+				F53CE294179F408700835E3E /* icon_minus.png */,
+				F53CE295179F408700835E3E /* icon_plus.png */,
+				F53CE296179F408700835E3E /* icon_smiley.png */,
+				F53CE297179F408700835E3E /* login_bg.png */,
+				F53CE298179F408700835E3E /* shiina.icns */,
+				F53CE299179F408700835E3E /* status-light-away.png */,
+				F53CE29A179F408700835E3E /* status-light-offline.png */,
+				F53CE29B179F408700835E3E /* status-light-online.png */,
+			);
+			name = Images;
+			path = art/ui_images;
+			sourceTree = SOURCE_ROOT;
 		};
 		F54268261790E16C0081673D = {
 			isa = PBXGroup;
 			children = (
 				F54268381790E16C0081673D /* Poison */,
+				F54C6DBB17923B1B00880937 /* PXListView */,
+				F53CE1E9179F3E5E00835E3E /* ProjectTox-Core */,
 				F54268311790E16C0081673D /* Frameworks */,
 				F54268301790E16C0081673D /* Products */,
 			);
@@ -277,104 +625,11 @@
 		F54268381790E16C0081673D /* Poison */ = {
 			isa = PBXGroup;
 			children = (
-				F54268531790EC190081673D /* UI */,
-				F5CB874A1791CD9400498D08 /* Network */,
-				F5CB874B1791CEAB00498D08 /* TOXCore */,
-				F54C6DBB17923B1B00880937 /* PXListView */,
-				F54268441790E16C0081673D /* SCAppDelegate.h */,
-				F54268451790E16C0081673D /* SCAppDelegate.m */,
-				F542684F1790EBBA0081673D /* Images */,
-				F54268391790E16C0081673D /* Supporting Files */,
+				F53CE162179F3CF400835E3E /* Code */,
+				F53CE13F179F3BEC00835E3E /* XIBs */,
+				F53CE13D179F3B6E00835E3E /* Supporting Files */,
 			);
 			path = Poison;
-			sourceTree = "<group>";
-		};
-		F54268391790E16C0081673D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F542683A1790E16C0081673D /* Poison-Info.plist */,
-				F54268621790FD110081673D /* English (everything to be localized here) */,
-				F542683E1790E16C0081673D /* main.m */,
-				F54268401790E16C0081673D /* Poison-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F542684F1790EBBA0081673D /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				F50027AB179BA1930071CBE8 /* shiina.icns */,
-				F5F1642A179CE56200E2B0B4 /* Poison.iconset */,
-				F5A6D2C31796014D00A8B451 /* Status Indicators */,
-				F595D6CB179328C400A6C4D2 /* Chat Window */,
-				F54268501790EBC20081673D /* Welcome Window */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
-		F54268501790EBC20081673D /* Welcome Window */ = {
-			isa = PBXGroup;
-			children = (
-				F54268511790EBCE0081673D /* login_splash.png */,
-				F59AA3C817924F1C00CB27B4 /* login_bg.png */,
-				F5F15DEF1793901E0084CE57 /* about_header.png */,
-			);
-			name = "Welcome Window";
-			sourceTree = "<group>";
-		};
-		F54268531790EC190081673D /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				F5CB87461791C53900498D08 /* Common */,
-				F5F19F08179C5EDA001DA32E /* About Window */,
-				F59EFE8817978ECB0065414B /* Preferences Window */,
-				F5CD9C261795C28900D22E2A /* Conversation View */,
-				F5AB42F4179621A80049BA91 /* Standalone Conversation Window */,
-				F5CD9C271795C29B00D22E2A /* Friend Request Sheet */,
-				F5C6228A17910D170007BAD1 /* Chat Window */,
-				F5195959179E2E32008688B5 /* Friend Requests Window */,
-				F54268541790EC1F0081673D /* Welcome Window */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		F54268541790EC1F0081673D /* Welcome Window */ = {
-			isa = PBXGroup;
-			children = (
-				F542685A1790F4040081673D /* SCWelcomeWindowController.h */,
-				F542685B1790F4040081673D /* SCWelcomeWindowController.m */,
-				F542685C1790F4040081673D /* SCWelcomeWindowController.xib */,
-				F59AA3CA1792523700CB27B4 /* SCWBackgroundView.h */,
-				F59AA3CB1792523700CB27B4 /* SCWBackgroundView.m */,
-				F59AA3CD1792583F00CB27B4 /* SCFlatButton.h */,
-				F59AA3CE1792583F00CB27B4 /* SCFlatButton.m */,
-			);
-			name = "Welcome Window";
-			sourceTree = "<group>";
-		};
-		F54268621790FD110081673D /* English (everything to be localized here) */ = {
-			isa = PBXGroup;
-			children = (
-				F542683B1790E16C0081673D /* InfoPlist.strings */,
-				F542685F1790FCAA0081673D /* Localizable.strings */,
-				F54268411790E16C0081673D /* Credits.rtf */,
-				F54268471790E16C0081673D /* MainMenu.xib */,
-				F50027B3179BA3030071CBE8 /* AboutWindow.xib */,
-				F50027B0179BA2FD0071CBE8 /* Preferences.xib */,
-				F50027B6179BA3580071CBE8 /* SCConversationViewController.xib */,
-				F50027B9179BA35C0071CBE8 /* SCFriendRequestSheetController.xib */,
-				F50027BC179BA3600071CBE8 /* SCFriendCellView.xib */,
-				F50027BF179BA3630071CBE8 /* SCAddFriendSheetController.xib */,
-				F50027C2179BA36A0071CBE8 /* SCMainChatWindowController.xib */,
-				F519595A179E2E91008688B5 /* SCFriendRequestListingController.xib */,
-				F5195960179E3B98008688B5 /* SCRequestCellView.xib */,
-				F50027C5179BA36D0071CBE8 /* BootstrapSheet.xib */,
-				F5F19F03179C5B71001DA32E /* General.xib */,
-				F5F19F00179C5B6C001DA32E /* Network.xib */,
-				F5F19EFD179C5B68001DA32E /* Interface.xib */,
-				F5F19F04179C5B7D001DA32E /* Preference Panes */,
-			);
-			name = "English (everything to be localized here)";
 			sourceTree = "<group>";
 		};
 		F54C6DBB17923B1B00880937 /* PXListView */ = {
@@ -394,159 +649,7 @@
 				F54C6DB617923B1700880937 /* PXListViewDropHighlight.h */,
 			);
 			name = PXListView;
-			sourceTree = "<group>";
-		};
-		F595D6CB179328C400A6C4D2 /* Chat Window */ = {
-			isa = PBXGroup;
-			children = (
-				F595D6CC179328D800A6C4D2 /* icon_minus.png */,
-				F595D6CD179328D800A6C4D2 /* icon_plus.png */,
-				F595D6E51793553C00A6C4D2 /* icon_smiley.png */,
-				F54F65EF179A514500E49C54 /* icon-frequests.png */,
-				F5F7DBCF179E51300051D066 /* icon_info.png */,
-			);
-			name = "Chat Window";
-			sourceTree = "<group>";
-		};
-		F59EFE8817978ECB0065414B /* Preferences Window */ = {
-			isa = PBXGroup;
-			children = (
-				F5F19F09179C5F08001DA32E /* SCGeneralPrefPaneController.h */,
-				F5F19F0A179C5F08001DA32E /* SCGeneralPrefPaneController.m */,
-				F5F19F0B179C5F08001DA32E /* SCInterfacePrefPaneController.h */,
-				F5F19F0C179C5F08001DA32E /* SCInterfacePrefPaneController.m */,
-				F5F19F0D179C5F08001DA32E /* SCNetworkPrefPaneController.h */,
-				F5F19F0E179C5F08001DA32E /* SCNetworkPrefPaneController.m */,
-				F5F19F0F179C5F08001DA32E /* SCPreferencesWindowController.h */,
-				F5F19F10179C5F08001DA32E /* SCPreferencesWindowController.m */,
-			);
-			name = "Preferences Window";
-			path = ..;
-			sourceTree = "<group>";
-		};
-		F5A6D2C31796014D00A8B451 /* Status Indicators */ = {
-			isa = PBXGroup;
-			children = (
-				F5A6D2C41796016C00A8B451 /* status-light-offline.png */,
-				F5A6D2C51796016C00A8B451 /* status-light-online.png */,
-			);
-			name = "Status Indicators";
-			sourceTree = "<group>";
-		};
-		F5AB42F4179621A80049BA91 /* Standalone Conversation Window */ = {
-			isa = PBXGroup;
-			children = (
-				F5AB42F1179621A50049BA91 /* SCConversationWindowController.h */,
-				F5AB42F2179621A50049BA91 /* SCConversationWindowController.m */,
-			);
-			name = "Standalone Conversation Window";
-			sourceTree = "<group>";
-		};
-		F5C6228A17910D170007BAD1 /* Chat Window */ = {
-			isa = PBXGroup;
-			children = (
-				F5CD9C2A1795CEA900D22E2A /* SCFriendCellView.h */,
-				F5CD9C2B1795CEA900D22E2A /* SCFriendCellView.m */,
-				F595D6D8179335BC00A6C4D2 /* SCAddFriendSheetController.h */,
-				F595D6D9179335BC00A6C4D2 /* SCAddFriendSheetController.m */,
-				F5C6228B17910D360007BAD1 /* SCMainChatWindowController.h */,
-				F5C6228C17910D360007BAD1 /* SCMainChatWindowController.m */,
-				F5EC99631794988400061109 /* SCBootstrapSheetController.h */,
-				F5EC99641794988400061109 /* SCBootstrapSheetController.m */,
-			);
-			name = "Chat Window";
-			sourceTree = "<group>";
-		};
-		F5CB87461791C53900498D08 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				F53CE139179F052F00835E3E /* SCWhiteChromeBGView.h */,
-				F53CE13A179F052F00835E3E /* SCWhiteChromeBGView.m */,
-				F595D6DD17933C5A00A6C4D2 /* SCPublicKeyFormatter.h */,
-				F595D6DE17933C5A00A6C4D2 /* SCPublicKeyFormatter.m */,
-				F5CB87431791C52F00498D08 /* SCChromeBGView.h */,
-				F5CB87441791C52F00498D08 /* SCChromeBGView.m */,
-				F54C6D8C17921A0C00880937 /* SCDarkChromeBGView.h */,
-				F54C6D8D17921A0C00880937 /* SCDarkChromeBGView.m */,
-				F5440BF6179A36C6004659AF /* SCDarkToolbarButton.h */,
-				F5440BF7179A36C6004659AF /* SCDarkToolbarButton.m */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
-		F5CB874A1791CD9400498D08 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				F542E72217975AA000DBFA04 /* SCChatContext.h */,
-				F542E72317975AA000DBFA04 /* SCChatContext.m */,
-				F5CB87471791CD9000498D08 /* SCTOXNetworkConnection.h */,
-				F5CB87481791CD9000498D08 /* SCTOXNetworkConnection.m */,
-				F5CD9C2F1795EA0000D22E2A /* SCFriendListManager.h */,
-				F5CD9C301795EA0000D22E2A /* SCFriendListManager.m */,
-				F5F15DF31793A0810084CE57 /* SCTOXFriend.h */,
-				F5F15DF41793A0810084CE57 /* SCTOXFriend.m */,
-			);
-			name = Network;
-			sourceTree = "<group>";
-		};
-		F5CB874B1791CEAB00498D08 /* TOXCore */ = {
-			isa = PBXGroup;
-			children = (
-				F5CB874C1791CED400498D08 /* DHT.c */,
-				F5CB874D1791CED400498D08 /* DHT.h */,
-				F5CB874E1791CED400498D08 /* Lossless_UDP.c */,
-				F5CB874F1791CED400498D08 /* Lossless_UDP.h */,
-				F5CB87501791CED400498D08 /* Messenger.c */,
-				F5CB87511791CED400498D08 /* Messenger.h */,
-				F5CB87521791CED400498D08 /* net_crypto.c */,
-				F5CB87531791CED400498D08 /* net_crypto.h */,
-				F5CB87541791CED400498D08 /* network.c */,
-				F5CB87551791CED400498D08 /* network.h */,
-				F5195947179DDB2D008688B5 /* friend_requests.c */,
-				F5195948179DDB2D008688B5 /* friend_requests.h */,
-			);
-			name = TOXCore;
-			sourceTree = "<group>";
-		};
-		F5CD9C261795C28900D22E2A /* Conversation View */ = {
-			isa = PBXGroup;
-			children = (
-				F595D6E017934B2100A6C4D2 /* SCChatStatusView.h */,
-				F595D6E117934B2100A6C4D2 /* SCChatStatusView.m */,
-				F5CD9C211795C28400D22E2A /* SCConversationViewController.h */,
-				F5CD9C221795C28400D22E2A /* SCConversationViewController.m */,
-				F595D6C7179324E600A6C4D2 /* SCChatBaseBackgroundView.h */,
-				F595D6C8179324E600A6C4D2 /* SCChatBaseBackgroundView.m */,
-				F595D6C5179310BE00A6C4D2 /* TranscriptViewBase.html */,
-				F5AB42F5179640D90049BA91 /* TranscriptViewBaseAlternate.html */,
-			);
-			name = "Conversation View";
-			path = ..;
-			sourceTree = "<group>";
-		};
-		F5CD9C271795C29B00D22E2A /* Friend Request Sheet */ = {
-			isa = PBXGroup;
-			children = (
-				F53BA0281795095A00FD552E /* SCFriendRequestSheetController.h */,
-				F53BA0291795095A00FD552E /* SCFriendRequestSheetController.m */,
-			);
-			name = "Friend Request Sheet";
-			sourceTree = "<group>";
-		};
-		F5F19F04179C5B7D001DA32E /* Preference Panes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Preference Panes";
-			sourceTree = "<group>";
-		};
-		F5F19F08179C5EDA001DA32E /* About Window */ = {
-			isa = PBXGroup;
-			children = (
-				F5F19F15179C5F16001DA32E /* SCAboutWindowController.h */,
-				F5F19F16179C5F16001DA32E /* SCAboutWindowController.m */,
-			);
-			name = "About Window";
+			path = Poison;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,7 +680,7 @@
 			attributes = {
 				CLASSPREFIX = SC;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "The TOX Project";
+				ORGANIZATIONNAME = "S-STOP ONII-CHAN IT HURTS";
 			};
 			buildConfigurationList = F542682A1790E16C0081673D /* Build configuration list for PBXProject "Poison" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -601,38 +704,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F542683D1790E16C0081673D /* InfoPlist.strings in Resources */,
-				F54268431790E16C0081673D /* Credits.rtf in Resources */,
-				F54268491790E16C0081673D /* MainMenu.xib in Resources */,
-				F54268521790EBCE0081673D /* login_splash.png in Resources */,
-				F542685E1790F4040081673D /* SCWelcomeWindowController.xib in Resources */,
-				F54268611790FCAA0081673D /* Localizable.strings in Resources */,
-				F59AA3C917924F1C00CB27B4 /* login_bg.png in Resources */,
-				F595D6C6179310BE00A6C4D2 /* TranscriptViewBase.html in Resources */,
-				F595D6CE179328D800A6C4D2 /* icon_minus.png in Resources */,
-				F595D6CF179328D800A6C4D2 /* icon_plus.png in Resources */,
-				F50027BD179BA3630071CBE8 /* SCAddFriendSheetController.xib in Resources */,
-				F595D6E61793553C00A6C4D2 /* icon_smiley.png in Resources */,
-				F5F15DF01793901E0084CE57 /* about_header.png in Resources */,
-				F50027B1179BA3030071CBE8 /* AboutWindow.xib in Resources */,
-				F50027C3179BA36D0071CBE8 /* BootstrapSheet.xib in Resources */,
-				F50027B7179BA35C0071CBE8 /* SCFriendRequestSheetController.xib in Resources */,
-				F50027B4179BA3580071CBE8 /* SCConversationViewController.xib in Resources */,
-				F50027C0179BA36A0071CBE8 /* SCMainChatWindowController.xib in Resources */,
-				F50027BA179BA3600071CBE8 /* SCFriendCellView.xib in Resources */,
-				F5A6D2C61796016C00A8B451 /* status-light-offline.png in Resources */,
-				F5A6D2C71796016C00A8B451 /* status-light-online.png in Resources */,
-				F5AB42F6179640D90049BA91 /* TranscriptViewBaseAlternate.html in Resources */,
-				F50027AE179BA2FD0071CBE8 /* Preferences.xib in Resources */,
-				F5F19F01179C5B71001DA32E /* General.xib in Resources */,
-				F5F19EFE179C5B6C001DA32E /* Network.xib in Resources */,
-				F5F19EFB179C5B68001DA32E /* Interface.xib in Resources */,
-				F54F65F0179A514500E49C54 /* icon-frequests.png in Resources */,
-				F50027AC179BA1930071CBE8 /* shiina.icns in Resources */,
-				F5F1642B179CE56200E2B0B4 /* Poison.iconset in Resources */,
-				F519595C179E2E91008688B5 /* SCFriendRequestListingController.xib in Resources */,
-				F5195961179E3B98008688B5 /* SCRequestCellView.xib in Resources */,
-				F5F7DBD0179E51300051D066 /* icon_info.png in Resources */,
+				F53CE14F179F3BED00835E3E /* AboutWindow.xib in Resources */,
+				F53CE150179F3BED00835E3E /* BootstrapSheet.xib in Resources */,
+				F53CE151179F3BED00835E3E /* General.xib in Resources */,
+				F53CE152179F3BED00835E3E /* Interface.xib in Resources */,
+				F53CE153179F3BED00835E3E /* MainMenu.xib in Resources */,
+				F53CE154179F3BED00835E3E /* Network.xib in Resources */,
+				F53CE155179F3BED00835E3E /* Preferences.xib in Resources */,
+				F53CE156179F3BED00835E3E /* AddFriend.xib in Resources */,
+				F53CE157179F3BED00835E3E /* Conversation.xib in Resources */,
+				F53CE158179F3BED00835E3E /* FriendCell.xib in Resources */,
+				F53CE159179F3BED00835E3E /* RequestsList.xib in Resources */,
+				F53CE15B179F3BED00835E3E /* MainWindow.xib in Resources */,
+				F53CE15C179F3BED00835E3E /* RequestCell.xib in Resources */,
+				F53CE15D179F3BED00835E3E /* LoginWindow.xib in Resources */,
+				F53CE1E5179F3D5E00835E3E /* InfoPlist.strings in Resources */,
+				F53CE1E6179F3D5E00835E3E /* Localizable.strings in Resources */,
+				F53CE1E8179F3DEB00835E3E /* Poison.iconset in Resources */,
+				F53CE29C179F408700835E3E /* about_header.png in Resources */,
+				F53CE29D179F408700835E3E /* icon-frequests.png in Resources */,
+				F53CE29E179F408700835E3E /* icon_info.png in Resources */,
+				F53CE29F179F408700835E3E /* icon_minus.png in Resources */,
+				F53CE2A0179F408700835E3E /* icon_plus.png in Resources */,
+				F53CE2A1179F408700835E3E /* icon_smiley.png in Resources */,
+				F53CE2A2179F408700835E3E /* login_bg.png in Resources */,
+				F53CE2A3179F408700835E3E /* shiina.icns in Resources */,
+				F53CE2A4179F408700835E3E /* status-light-away.png in Resources */,
+				F53CE2A5179F408700835E3E /* status-light-offline.png in Resources */,
+				F53CE2A6179F408700835E3E /* status-light-online.png in Resources */,
+				F53CE2A9179F409200835E3E /* TranscriptViewBase.html in Resources */,
+				F53CE2AA179F409200835E3E /* TranscriptViewBaseAlternate.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,188 +744,64 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F542683F1790E16C0081673D /* main.m in Sources */,
-				F54268461790E16C0081673D /* SCAppDelegate.m in Sources */,
-				F542685D1790F4040081673D /* SCWelcomeWindowController.m in Sources */,
-				F5C6228E17910D360007BAD1 /* SCMainChatWindowController.m in Sources */,
-				F5CB87451791C52F00498D08 /* SCChromeBGView.m in Sources */,
-				F5CB87491791CD9000498D08 /* SCTOXNetworkConnection.m in Sources */,
-				F5CB87561791CED400498D08 /* DHT.c in Sources */,
-				F5CB87571791CED400498D08 /* Lossless_UDP.c in Sources */,
-				F5CB87581791CED400498D08 /* Messenger.c in Sources */,
-				F5CB87591791CED400498D08 /* net_crypto.c in Sources */,
-				F5CB875A1791CED400498D08 /* network.c in Sources */,
-				F54C6D8E17921A0C00880937 /* SCDarkChromeBGView.m in Sources */,
 				F54C6DB717923B1700880937 /* PXListDocumentView.m in Sources */,
 				F54C6DB817923B1700880937 /* PXListView.m in Sources */,
 				F54C6DB917923B1700880937 /* PXListView+UserInteraction.m in Sources */,
 				F54C6DBA17923B1700880937 /* PXListViewCell.m in Sources */,
-				F59AA3CC1792523700CB27B4 /* SCWBackgroundView.m in Sources */,
-				F59AA3CF1792583F00CB27B4 /* SCFlatButton.m in Sources */,
-				F595D6C9179324E700A6C4D2 /* SCChatBaseBackgroundView.m in Sources */,
-				F595D6DB179335BC00A6C4D2 /* SCAddFriendSheetController.m in Sources */,
-				F595D6DF17933C5A00A6C4D2 /* SCPublicKeyFormatter.m in Sources */,
-				F595D6E217934B2100A6C4D2 /* SCChatStatusView.m in Sources */,
-				F5F15DF51793A0810084CE57 /* SCTOXFriend.m in Sources */,
-				F5EC99651794988400061109 /* SCBootstrapSheetController.m in Sources */,
-				F53BA02B1795095A00FD552E /* SCFriendRequestSheetController.m in Sources */,
-				F5CD9C241795C28400D22E2A /* SCConversationViewController.m in Sources */,
-				F5CD9C2C1795CEA900D22E2A /* SCFriendCellView.m in Sources */,
-				F5CD9C311795EA0000D22E2A /* SCFriendListManager.m in Sources */,
-				F5AB42F3179621A50049BA91 /* SCConversationWindowController.m in Sources */,
-				F542E72417975AA000DBFA04 /* SCChatContext.m in Sources */,
-				F5440BF8179A36C6004659AF /* SCDarkToolbarButton.m in Sources */,
-				F5F19F11179C5F08001DA32E /* SCGeneralPrefPaneController.m in Sources */,
-				F5F19F12179C5F08001DA32E /* SCInterfacePrefPaneController.m in Sources */,
-				F5F19F13179C5F08001DA32E /* SCNetworkPrefPaneController.m in Sources */,
-				F5F19F14179C5F08001DA32E /* SCPreferencesWindowController.m in Sources */,
-				F5F19F17179C5F16001DA32E /* SCAboutWindowController.m in Sources */,
-				F5195949179DDB2D008688B5 /* friend_requests.c in Sources */,
-				F5195958179E2E2D008688B5 /* SCFriendRequestListingController.m in Sources */,
-				F519595F179E3B71008688B5 /* SCRequestCellView.m in Sources */,
-				F53CE13B179F052F00835E3E /* SCWhiteChromeBGView.m in Sources */,
+				F53CE1B8179F3CF500835E3E /* SCAppDelegate.m in Sources */,
+				F53CE1B9179F3CF500835E3E /* SCAboutWindowController.m in Sources */,
+				F53CE1BB179F3CF500835E3E /* SCChromeBGView.m in Sources */,
+				F53CE1BC179F3CF500835E3E /* SCDarkChromeBGView.m in Sources */,
+				F53CE1BE179F3CF500835E3E /* SCPublicKeyFormatter.m in Sources */,
+				F53CE1BF179F3CF500835E3E /* SCWhiteChromeBGView.m in Sources */,
+				F53CE1C0179F3CF500835E3E /* SCConversationViewController.m in Sources */,
+				F53CE1C1179F3CF500835E3E /* SCConversationWindowController.m in Sources */,
+				F53CE1C4179F3CF500835E3E /* SCFriendRequestListingController.m in Sources */,
+				F53CE1C5179F3CF500835E3E /* SCRequestCellView.m in Sources */,
+				F53CE1C6179F3CF500835E3E /* SCFlatButton.m in Sources */,
+				F53CE1C7179F3CF500835E3E /* SCWBackgroundView.m in Sources */,
+				F53CE1C8179F3CF500835E3E /* SCWelcomeWindowController.m in Sources */,
+				F53CE1C9179F3CF500835E3E /* main.m in Sources */,
+				F53CE1CA179F3CF500835E3E /* SCAddFriendSheetController.m in Sources */,
+				F53CE1CB179F3CF500835E3E /* SCBootstrapSheetController.m in Sources */,
+				F53CE1CC179F3CF500835E3E /* SCChatBaseBackgroundView.m in Sources */,
+				F53CE1CD179F3CF500835E3E /* SCChatStatusView.m in Sources */,
+				F53CE1CE179F3CF500835E3E /* SCFriendCellView.m in Sources */,
+				F53CE1CF179F3CF500835E3E /* SCMainChatWindowController.m in Sources */,
+				F53CE1D8179F3CF500835E3E /* SCChatContext.m in Sources */,
+				F53CE1D9179F3CF500835E3E /* SCFriendListManager.m in Sources */,
+				F53CE1DA179F3CF500835E3E /* SCTOXFriend.m in Sources */,
+				F53CE1DB179F3CF500835E3E /* SCTOXNetworkConnection.m in Sources */,
+				F53CE1DC179F3CF500835E3E /* SCGeneralPrefPaneController.m in Sources */,
+				F53CE1DD179F3CF500835E3E /* SCInterfacePrefPaneController.m in Sources */,
+				F53CE1DE179F3CF500835E3E /* SCNetworkPrefPaneController.m in Sources */,
+				F53CE1DF179F3CF500835E3E /* SCPreferencesWindowController.m in Sources */,
+				F53CE221179F3E5E00835E3E /* DHT.c in Sources */,
+				F53CE222179F3E5F00835E3E /* Lossless_UDP.c in Sources */,
+				F53CE223179F3E5F00835E3E /* Messenger.c in Sources */,
+				F53CE224179F3E5F00835E3E /* friend_requests.c in Sources */,
+				F53CE225179F3E5F00835E3E /* net_crypto.c in Sources */,
+				F53CE226179F3E5F00835E3E /* network.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F50027B0179BA2FD0071CBE8 /* Preferences.xib */ = {
+		F53CE1E1179F3D5E00835E3E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F50027AF179BA2FD0071CBE8 /* en */,
-			);
-			name = Preferences.xib;
-			sourceTree = "<group>";
-		};
-		F50027B3179BA3030071CBE8 /* AboutWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F50027B2179BA3030071CBE8 /* en */,
-			);
-			name = AboutWindow.xib;
-			sourceTree = "<group>";
-		};
-		F50027B6179BA3580071CBE8 /* SCConversationViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F50027B5179BA3580071CBE8 /* en */,
-			);
-			name = SCConversationViewController.xib;
-			path = UIConversationView;
-			sourceTree = "<group>";
-		};
-		F50027B9179BA35C0071CBE8 /* SCFriendRequestSheetController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F50027B8179BA35C0071CBE8 /* en */,
-			);
-			name = SCFriendRequestSheetController.xib;
-			path = UIFriendRequestSheet;
-			sourceTree = "<group>";
-		};
-		F50027BC179BA3600071CBE8 /* SCFriendCellView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F50027BB179BA3600071CBE8 /* en */,
-			);
-			name = SCFriendCellView.xib;
-			path = UIChatWindow;
-			sourceTree = "<group>";
-		};
-		F50027BF179BA3630071CBE8 /* SCAddFriendSheetController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F50027BE179BA3630071CBE8 /* en */,
-			);
-			name = SCAddFriendSheetController.xib;
-			path = UIChatWindow;
-			sourceTree = "<group>";
-		};
-		F50027C2179BA36A0071CBE8 /* SCMainChatWindowController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F50027C1179BA36A0071CBE8 /* en */,
-			);
-			name = SCMainChatWindowController.xib;
-			path = UIChatWindow;
-			sourceTree = "<group>";
-		};
-		F50027C5179BA36D0071CBE8 /* BootstrapSheet.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F50027C4179BA36D0071CBE8 /* en */,
-			);
-			name = BootstrapSheet.xib;
-			path = UIWelcomeWindow;
-			sourceTree = "<group>";
-		};
-		F519595A179E2E91008688B5 /* SCFriendRequestListingController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F519595B179E2E91008688B5 /* en */,
-			);
-			name = SCFriendRequestListingController.xib;
-			path = ..;
-			sourceTree = "<group>";
-		};
-		F542683B1790E16C0081673D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F542683C1790E16C0081673D /* en */,
+				F53CE1E2179F3D5E00835E3E /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		F54268411790E16C0081673D /* Credits.rtf */ = {
+		F53CE1E3179F3D5E00835E3E /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F54268421790E16C0081673D /* en */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		F54268471790E16C0081673D /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F54268481790E16C0081673D /* en */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		F542685F1790FCAA0081673D /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F54268601790FCAA0081673D /* en */,
+				F53CE1E4179F3D5E00835E3E /* en */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		F5F19EFD179C5B68001DA32E /* Interface.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5F19EFC179C5B68001DA32E /* en */,
-			);
-			name = Interface.xib;
-			path = UIPreferencePanes;
-			sourceTree = "<group>";
-		};
-		F5F19F00179C5B6C001DA32E /* Network.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5F19EFF179C5B6C001DA32E /* en */,
-			);
-			name = Network.xib;
-			path = UIPreferencePanes;
-			sourceTree = "<group>";
-		};
-		F5F19F03179C5B71001DA32E /* General.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F5F19F02179C5B71001DA32E /* en */,
-			);
-			name = General.xib;
-			path = UIPreferencePanes;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -894,15 +871,15 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Poison/Poison-Prefix.pch";
+				GCC_PREFIX_HEADER = "code/Poison-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/local/include;
-				INFOPLIST_FILE = "Poison/Poison-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/code/Poison-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/lib,
 					"\"$(SRCROOT)\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				OTHER_CFLAGS = (
 					"-Werror",
 					"-Wall",
@@ -918,15 +895,15 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Poison/Poison-Prefix.pch";
+				GCC_PREFIX_HEADER = "code/Poison-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/local/include;
-				INFOPLIST_FILE = "Poison/Poison-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/code/Poison-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/usr/local/lib,
 					"\"$(SRCROOT)\"",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.6.8;
 				OTHER_CFLAGS = (
 					"-Werror",
 					"-Wall",

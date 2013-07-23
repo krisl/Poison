@@ -1,0 +1,10 @@
+// You will not find the licensing jibber-jabber here.
+// Go read it elsewhere.
+
+// Prefix header for all source files of the 'Poison' target in the 'Poison' project
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+    #define OS_VERSION_IS_BETTER_THAN_SNOW_LEOPARD (floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_6)
+    #define CALLS_INTO_CORE_FUNCTIONS
+#endif

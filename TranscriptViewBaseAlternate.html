@@ -1,0 +1,99 @@
+<html>
+<head><style>
+    body {
+        background-color:transparent;
+        margin-top:1em;
+        margin:1em 0.5em;
+    }
+    div.message {
+        font-size:10pt;
+        font-family:Helvetica;
+        color:black;
+        text-shadow:0px 1px rgba(255,255,255,0.55);
+        padding:0.5em 1em;
+        display:table-row;
+    }
+    div.clear {
+        clear:both;
+    }
+    div.message > .msect {
+        display:table-cell;
+        height:100%;
+        padding:0.5em 0;
+    }
+    div.message > .msect.timestamp {
+        padding-right:0.5em;
+        color:#637995;
+        font-weight:200;
+        font-size:9pt;
+    }
+    div.message > .msect.content-wrapper > .sender {
+        font-size:9pt;
+        font-weight:bold;
+        color:#666666;
+    }
+    div.message.ours > .msect.content-wrapper > * {
+        border-left:4px solid #5486ff;
+        padding-left:5px;
+    }
+    div.message.theirs > .msect.content-wrapper > * {
+        border-left:4px solid gray;
+        padding-left:5px;
+    }
+</style></head>
+<body>
+    <div class="message ours">
+        <div class="msect timestamp">
+            13:50
+        </div>
+        <div class="msect content-wrapper">
+            <div class="sender">Me</div>
+            <div class="contents">The seagull, wonder if she is sad</div>
+        </div>
+    </div>
+    <div class="message ours">
+        <div class="msect timestamp">
+            13:50
+        </div>
+        <div class="msect content-wrapper">
+            <div class="sender">Me</div>
+            <div class="contents">left alone without being touched</div>
+        </div>
+    </div>
+    <div class="message ours">
+        <div class="msect timestamp">
+            13:50
+        </div>
+        <div class="msect content-wrapper">
+            <div class="sender">Me</div>
+            <div class="contents">by the blue of the sky, or the blue of the sea.</div>
+        </div>
+    </div>
+    <div class="message theirs">
+        <div class="msect timestamp">
+            13:52
+        </div>
+        <div class="msect content-wrapper">
+            <div class="sender">Richard Stallman</div>
+            <div class="contents">
+                Arch is a variant of the GNU/Linux system.  It has a flaw:
+                it contains nonfree programs.  Distributing them is not ethical,
+                and I don't endorse Arch GNU/Linux.  However, I think the word
+                "enemy" is too strong.  I think the people who develop Arch
+                have a preference for free software.  What they don't have
+                is moral firmness.
+            </div>
+        </div>
+    </div>
+    <div class="message status">
+        <div class="msect timestamp">
+            14:21
+        </div>
+        <div class="msect content-wrapper">
+            <div class="contents">
+                <b>Richard Stallman</b> is now <b>offline</b>.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
