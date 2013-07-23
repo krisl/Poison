@@ -1,0 +1,28 @@
+language: c
+compiler:
+  - gcc
+  - clang
+
+before_script:
+  - git clone git://github.com/jedisct1/libsodium.git
+  - cd libsodium
+  - git checkout tags/0.4.2
+  - ./autogen.sh
+  - ./configure && make check -j3
+  - sudo make install
+  - sudo ldconfig
+  - cd ..
+
+script:
+  - mkdir build && cd build
+  - cmake ..
+  - make -j3
+
+notifications:
+  email: false
+
+  irc: 
+    channels:
+      - "chat.freenode.net#InsertProjectNameHere"
+    on_success: always
+    on_failure: always

@@ -1,0 +1,13 @@
+.DS_Store
+
+//nacl build
+nacl/build/
+build
+
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+
+testing/data
