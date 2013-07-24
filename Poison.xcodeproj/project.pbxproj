@@ -65,7 +65,6 @@
 		F53CE2A0179F408700835E3E /* icon_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE295179F408700835E3E /* icon_plus.png */; };
 		F53CE2A1179F408700835E3E /* icon_smiley.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE296179F408700835E3E /* icon_smiley.png */; };
 		F53CE2A2179F408700835E3E /* login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE297179F408700835E3E /* login_bg.png */; };
-		F53CE2A3179F408700835E3E /* shiina.icns in Resources */ = {isa = PBXBuildFile; fileRef = F53CE298179F408700835E3E /* shiina.icns */; };
 		F53CE2A4179F408700835E3E /* status-light-away.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE299179F408700835E3E /* status-light-away.png */; };
 		F53CE2A5179F408700835E3E /* status-light-offline.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE29A179F408700835E3E /* status-light-offline.png */; };
 		F53CE2A6179F408700835E3E /* status-light-online.png in Resources */ = {isa = PBXBuildFile; fileRef = F53CE29B179F408700835E3E /* status-light-online.png */; };
@@ -78,6 +77,7 @@
 		F54C6DBA17923B1700880937 /* PXListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C6DB317923B1700880937 /* PXListViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F595D6C4179307B100A6C4D2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595D6C3179307B100A6C4D2 /* WebKit.framework */; };
 		F595D6E417934CBF00A6C4D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595D6E317934CBF00A6C4D2 /* QuartzCore.framework */; };
+		F5F3B254179F737D00DC9B54 /* shiina.iconset in Resources */ = {isa = PBXBuildFile; fileRef = F5F3B253179F737D00DC9B54 /* shiina.iconset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,7 +204,6 @@
 		F53CE295179F408700835E3E /* icon_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_plus.png; sourceTree = "<group>"; };
 		F53CE296179F408700835E3E /* icon_smiley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_smiley.png; sourceTree = "<group>"; };
 		F53CE297179F408700835E3E /* login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_bg.png; sourceTree = "<group>"; };
-		F53CE298179F408700835E3E /* shiina.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = shiina.icns; sourceTree = "<group>"; };
 		F53CE299179F408700835E3E /* status-light-away.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-light-away.png"; sourceTree = "<group>"; };
 		F53CE29A179F408700835E3E /* status-light-offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-light-offline.png"; sourceTree = "<group>"; };
 		F53CE29B179F408700835E3E /* status-light-online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-light-online.png"; sourceTree = "<group>"; };
@@ -230,6 +229,7 @@
 		F595D6C3179307B100A6C4D2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F595D6E317934CBF00A6C4D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F5F3B252179F504400DC9B54 /* Poison.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Poison.entitlements; sourceTree = SOURCE_ROOT; };
+		F5F3B253179F737D00DC9B54 /* shiina.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = shiina.iconset; path = art/shiina.iconset; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +253,7 @@
 				F53CE290179F408700835E3E /* Images */,
 				F53CE163179F3CF400835E3E /* Poison-Info.plist */,
 				F53CE1E7179F3DEB00835E3E /* Poison.iconset */,
+				F5F3B253179F737D00DC9B54 /* shiina.iconset */,
 				F53CE2A7179F409200835E3E /* TranscriptViewBase.html */,
 				F53CE2A8179F409200835E3E /* TranscriptViewBaseAlternate.html */,
 				F53CE1E0179F3D5D00835E3E /* Localizable */,
@@ -575,7 +576,6 @@
 				F53CE295179F408700835E3E /* icon_plus.png */,
 				F53CE296179F408700835E3E /* icon_smiley.png */,
 				F53CE297179F408700835E3E /* login_bg.png */,
-				F53CE298179F408700835E3E /* shiina.icns */,
 				F53CE299179F408700835E3E /* status-light-away.png */,
 				F53CE29A179F408700835E3E /* status-light-offline.png */,
 				F53CE29B179F408700835E3E /* status-light-online.png */,
@@ -730,12 +730,12 @@
 				F53CE2A0179F408700835E3E /* icon_plus.png in Resources */,
 				F53CE2A1179F408700835E3E /* icon_smiley.png in Resources */,
 				F53CE2A2179F408700835E3E /* login_bg.png in Resources */,
-				F53CE2A3179F408700835E3E /* shiina.icns in Resources */,
 				F53CE2A4179F408700835E3E /* status-light-away.png in Resources */,
 				F53CE2A5179F408700835E3E /* status-light-offline.png in Resources */,
 				F53CE2A6179F408700835E3E /* status-light-online.png in Resources */,
 				F53CE2A9179F409200835E3E /* TranscriptViewBase.html in Resources */,
 				F53CE2AA179F409200835E3E /* TranscriptViewBaseAlternate.html in Resources */,
+				F5F3B254179F737D00DC9B54 /* shiina.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

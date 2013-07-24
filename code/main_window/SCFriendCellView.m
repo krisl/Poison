@@ -22,6 +22,14 @@
     return self;
 }
 
+- (IBAction)sendForkNewWindowNotification:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"FriendCellDoubleClick" object:nil userInfo:@{@"representedFriend": @0}];
+}
+
+- (IBAction)sendRemoveFriendNotification:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"DeleteFriendAtCellIndex" object:nil userInfo:@{@"forCell": @([self row])}];
+}
+
 - (void)drawRect:(NSRect)dirtyRect {
     if (self.selected) {
         NSGradient *shadowGrad = [[NSGradient alloc] initWithStartingColor:[NSColor clearColor] endingColor:[NSColor colorWithCalibratedWhite:0.071 alpha:0.3]];

@@ -36,6 +36,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(bootstrappingDidFail:) name:@"BootstrapDidFail" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setStatusOnline:) name:@"BootstrapDidComplete" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setStatusOffline:) name:@"NetworkDidDisconnect" object:appDelegate.connection];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deleteFriendAtCellIndex:) name:@"DeleteFriendAtCellIndex" object:nil];
     //self.backgroundView.backgroundColor = [NSColor colorWithCalibratedRed:0.8824 green:0.8980 blue:0.9294 alpha:1.0000];
 }
 
@@ -73,6 +74,10 @@
     [sheetContext loadWindow];
     ((SCBootstrapSheetController*)sheetContext).addressLabel.stringValue = NSLocalizedString(@"Bootstrapping failed. Please try another server.", @"");
     [NSApp beginSheet:sheetContext.window modalForWindow:self.window modalDelegate:self didEndSelector:@selector(didEndSheet:returnCode:contextInfo:) contextInfo:NULL];
+}
+
+- (void)deleteFriendAtCellIndex:(NSNotification *)notification {
+    
 }
 
 - (void)didEndSheet:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {

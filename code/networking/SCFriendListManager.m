@@ -13,6 +13,7 @@
     self = [super init];
     if (self) {
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didReceiveFriendRequest:) name:@"DeepEndFriendRequestReceived" object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(shouldDeleteFriend:) name:@"DeleteFriendAtCellIndex" object:nil];
         _pendingRequests = [[NSMutableArray alloc] initWithCapacity:16];
     }
     return self;
@@ -49,6 +50,8 @@
     }]];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateFriendRequestCount" object:self userInfo:@{@"newCount": @(_pendingRequests.count)}];
 }
+
+
 
 #pragma mark - PXListView Delegate
 
