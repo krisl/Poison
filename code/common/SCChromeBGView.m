@@ -18,7 +18,7 @@
 }
 
 - (void)awakeFromNib {
-    self.cornerRadius = 18;
+    self.cornerRadius = 14;
 }
 
 - (void)viewDidMoveToWindow {

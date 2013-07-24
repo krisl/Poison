@@ -7,19 +7,11 @@
 //
 
 #import "SCFriendCellView.h"
+#import "SCTOXFriend.h"
 
 @implementation SCFriendCellView {
     BOOL isCurrentlyCollapsed;
-}
-
-- (id)initWithFrame:(NSRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code here.
-    }
-    
-    return self;
+    SCTOXFriend *assignedFriend;
 }
 
 - (IBAction)sendForkNewWindowNotification:(id)sender {
@@ -28,6 +20,29 @@
 
 - (IBAction)sendRemoveFriendNotification:(id)sender {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"DeleteFriendAtCellIndex" object:nil userInfo:@{@"forCell": @([self row])}];
+}
+
+- (void)assignFriend:(SCTOXFriend *)theFriend {
+    assignedFriend = theFriend;
+    [theFriend addObserver:self forKeyPath:@"nickname" options:NSKeyValueObservingOptionNew context:NULL];
+    [theFriend addObserver:self forKeyPath:@"userStatus" options:NSKeyValueObservingOptionNew context:NULL];
+}
+
+- (void)prepareForReuse {
+    [assignedFriend removeObserver:self forKeyPath:@"nickname"];
+    [assignedFriend removeObserver:self forKeyPath:@"userStatus"];
+    assignedFriend = nil;
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    if (object != assignedFriend) {
+        return;
+    }
+    if ([keyPath isEqualToString:@"nickname"]) {
+        self.nicknameLabel.stringValue = change[NSKeyValueChangeNewKey];
+    } else if ([keyPath isEqualToString:@"userStatus"]) {
+        self.userStatusLabel.stringValue = change[NSKeyValueChangeNewKey];
+    }
 }
 
 - (void)drawRect:(NSRect)dirtyRect {

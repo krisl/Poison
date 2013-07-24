@@ -12,12 +12,26 @@
 - (instancetype) CALLS_INTO_CORE_FUNCTIONS initWithFriendID:(int)theID {
     self = [super init];
     if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(nameChanged:) name:@"DeepEndNameChanged" object:@(theID)];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(userStatusChanged:) name:@"DeepEndUserStatusChanged" object:@(theID)];
         _friendID = theID;
         _publicKey = malloc(crypto_box_PUBLICKEYBYTES);
         _userStatus = NSLocalizedString(@"Offline", @"");
         getclient_id(theID, _publicKey);
     }
     return self;
+}
+
+- (void)nameChanged:(NSNotification *)notification {
+    [self willChangeValueForKey:@"nickname"];
+    _nickname = notification.userInfo[@"newName"];
+    [self didChangeValueForKey:@"nickname"];
+}
+
+- (void)userStatusChanged:(NSNotification *)notification {
+    [self willChangeValueForKey:@"userStatus"];
+    _userStatus = notification.userInfo[@"newStatus"];
+    [self didChangeValueForKey:@"userStatus"];
 }
 
 - (BOOL) CALLS_INTO_CORE_FUNCTIONS sendMessage:(NSString *)message {

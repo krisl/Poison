@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F511AAB217A040340039A578 /* tox_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F511AAB117A040340039A578 /* tox_logo.png */; };
-		F53CE14F179F3BED00835E3E /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE140179F3BEC00835E3E /* AboutWindow.xib */; };
-		F53CE150179F3BED00835E3E /* BootstrapSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE141179F3BED00835E3E /* BootstrapSheet.xib */; };
-		F53CE151179F3BED00835E3E /* General.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE142179F3BED00835E3E /* General.xib */; };
-		F53CE152179F3BED00835E3E /* Interface.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE143179F3BED00835E3E /* Interface.xib */; };
-		F53CE153179F3BED00835E3E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE144179F3BED00835E3E /* MainMenu.xib */; };
-		F53CE154179F3BED00835E3E /* Network.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE145179F3BED00835E3E /* Network.xib */; };
-		F53CE155179F3BED00835E3E /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE146179F3BED00835E3E /* Preferences.xib */; };
-		F53CE156179F3BED00835E3E /* AddFriend.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE147179F3BED00835E3E /* AddFriend.xib */; };
-		F53CE157179F3BED00835E3E /* Conversation.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE148179F3BED00835E3E /* Conversation.xib */; };
-		F53CE158179F3BED00835E3E /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE149179F3BED00835E3E /* FriendCell.xib */; };
-		F53CE159179F3BED00835E3E /* RequestsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE14A179F3BED00835E3E /* RequestsList.xib */; };
-		F53CE15B179F3BED00835E3E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE14C179F3BED00835E3E /* MainWindow.xib */; };
-		F53CE15C179F3BED00835E3E /* RequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE14D179F3BED00835E3E /* RequestCell.xib */; };
-		F53CE15D179F3BED00835E3E /* LoginWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53CE14E179F3BED00835E3E /* LoginWindow.xib */; };
+		F511AAB317A044F10039A578 /* RequestsList.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AAB517A044F10039A578 /* RequestsList.xib */; };
+		F511AAB617A044FC0039A578 /* RequestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AAB817A044FC0039A578 /* RequestCell.xib */; };
+		F511AAB917A045060039A578 /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AABB17A045060039A578 /* FriendCell.xib */; };
+		F511AABC17A0450B0039A578 /* Conversation.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AABE17A0450B0039A578 /* Conversation.xib */; };
+		F511AABF17A045110039A578 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AAC117A045110039A578 /* MainMenu.xib */; };
+		F511AAC217A045170039A578 /* Interface.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AAC417A045170039A578 /* Interface.xib */; };
+		F511AAC517A0451B0039A578 /* Network.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AAC717A0451B0039A578 /* Network.xib */; };
+		F511AAC817A0451E0039A578 /* General.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AACA17A0451E0039A578 /* General.xib */; };
+		F511AACB17A045240039A578 /* AddFriend.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AACD17A045240039A578 /* AddFriend.xib */; };
+		F511AACE17A045280039A578 /* BootstrapSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AAD017A045280039A578 /* BootstrapSheet.xib */; };
+		F511AAD117A045640039A578 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AAD317A045640039A578 /* MainWindow.xib */; };
+		F511AAD417A045680039A578 /* LoginWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AAD617A045680039A578 /* LoginWindow.xib */; };
+		F511AAD717A0456C0039A578 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AAD917A0456C0039A578 /* Preferences.xib */; };
+		F511AADA17A045710039A578 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F511AADC17A045710039A578 /* AboutWindow.xib */; };
 		F53CE1B8179F3CF500835E3E /* SCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE166179F3CF400835E3E /* SCAppDelegate.m */; };
 		F53CE1B9179F3CF500835E3E /* SCAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE169179F3CF400835E3E /* SCAboutWindowController.m */; };
 		F53CE1BB179F3CF500835E3E /* SCChromeBGView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE16F179F3CF400835E3E /* SCChromeBGView.m */; };
@@ -81,20 +81,20 @@
 
 /* Begin PBXFileReference section */
 		F511AAB117A040340039A578 /* tox_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tox_logo.png; sourceTree = "<group>"; };
-		F53CE140179F3BEC00835E3E /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
-		F53CE141179F3BED00835E3E /* BootstrapSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BootstrapSheet.xib; sourceTree = "<group>"; };
-		F53CE142179F3BED00835E3E /* General.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = General.xib; sourceTree = "<group>"; };
-		F53CE143179F3BED00835E3E /* Interface.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Interface.xib; sourceTree = "<group>"; };
-		F53CE144179F3BED00835E3E /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
-		F53CE145179F3BED00835E3E /* Network.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Network.xib; sourceTree = "<group>"; };
-		F53CE146179F3BED00835E3E /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
-		F53CE147179F3BED00835E3E /* AddFriend.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddFriend.xib; sourceTree = "<group>"; };
-		F53CE148179F3BED00835E3E /* Conversation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Conversation.xib; sourceTree = "<group>"; };
-		F53CE149179F3BED00835E3E /* FriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
-		F53CE14A179F3BED00835E3E /* RequestsList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestsList.xib; sourceTree = "<group>"; };
-		F53CE14C179F3BED00835E3E /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		F53CE14D179F3BED00835E3E /* RequestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestCell.xib; sourceTree = "<group>"; };
-		F53CE14E179F3BED00835E3E /* LoginWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginWindow.xib; sourceTree = "<group>"; };
+		F511AAB417A044F10039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RequestsList.xib; sourceTree = "<group>"; };
+		F511AAB717A044FC0039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RequestCell.xib; sourceTree = "<group>"; };
+		F511AABA17A045060039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FriendCell.xib; sourceTree = "<group>"; };
+		F511AABD17A0450B0039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Conversation.xib; sourceTree = "<group>"; };
+		F511AAC017A045110039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F511AAC317A045170039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Interface.xib; sourceTree = "<group>"; };
+		F511AAC617A0451B0039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Network.xib; sourceTree = "<group>"; };
+		F511AAC917A0451E0039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/General.xib; sourceTree = "<group>"; };
+		F511AACC17A045240039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AddFriend.xib; sourceTree = "<group>"; };
+		F511AACF17A045280039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BootstrapSheet.xib; sourceTree = "<group>"; };
+		F511AAD217A045640039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		F511AAD517A045680039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LoginWindow.xib; sourceTree = "<group>"; };
+		F511AAD817A0456C0039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Preferences.xib; sourceTree = "<group>"; };
+		F511AADB17A045710039A578 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AboutWindow.xib; sourceTree = "<group>"; };
 		F53CE163179F3CF400835E3E /* Poison-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; name = "Poison-Info.plist"; path = "code/Poison-Info.plist"; sourceTree = "<group>"; };
 		F53CE164179F3CF400835E3E /* Poison-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Poison-Prefix.pch"; sourceTree = "<group>"; };
 		F53CE165179F3CF400835E3E /* SCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAppDelegate.h; sourceTree = "<group>"; };
@@ -265,10 +265,10 @@
 				F53CE161179F3C6400835E3E /* Windows */,
 				F53CE15F179F3C4500835E3E /* Sheets */,
 				F53CE15E179F3C1400835E3E /* Preference Panes */,
-				F53CE144179F3BED00835E3E /* MainMenu.xib */,
-				F53CE148179F3BED00835E3E /* Conversation.xib */,
-				F53CE149179F3BED00835E3E /* FriendCell.xib */,
-				F53CE14D179F3BED00835E3E /* RequestCell.xib */,
+				F511AAC117A045110039A578 /* MainMenu.xib */,
+				F511AABE17A0450B0039A578 /* Conversation.xib */,
+				F511AABB17A045060039A578 /* FriendCell.xib */,
+				F511AAB817A044FC0039A578 /* RequestCell.xib */,
 			);
 			name = XIBs;
 			path = interfaces;
@@ -277,9 +277,9 @@
 		F53CE15E179F3C1400835E3E /* Preference Panes */ = {
 			isa = PBXGroup;
 			children = (
-				F53CE142179F3BED00835E3E /* General.xib */,
-				F53CE143179F3BED00835E3E /* Interface.xib */,
-				F53CE145179F3BED00835E3E /* Network.xib */,
+				F511AACA17A0451E0039A578 /* General.xib */,
+				F511AAC417A045170039A578 /* Interface.xib */,
+				F511AAC717A0451B0039A578 /* Network.xib */,
 			);
 			name = "Preference Panes";
 			sourceTree = "<group>";
@@ -287,9 +287,9 @@
 		F53CE15F179F3C4500835E3E /* Sheets */ = {
 			isa = PBXGroup;
 			children = (
-				F53CE141179F3BED00835E3E /* BootstrapSheet.xib */,
-				F53CE147179F3BED00835E3E /* AddFriend.xib */,
-				F53CE14A179F3BED00835E3E /* RequestsList.xib */,
+				F511AAD017A045280039A578 /* BootstrapSheet.xib */,
+				F511AACD17A045240039A578 /* AddFriend.xib */,
+				F511AAB517A044F10039A578 /* RequestsList.xib */,
 			);
 			name = Sheets;
 			sourceTree = "<group>";
@@ -297,10 +297,10 @@
 		F53CE161179F3C6400835E3E /* Windows */ = {
 			isa = PBXGroup;
 			children = (
-				F53CE140179F3BEC00835E3E /* AboutWindow.xib */,
-				F53CE146179F3BED00835E3E /* Preferences.xib */,
-				F53CE14C179F3BED00835E3E /* MainWindow.xib */,
-				F53CE14E179F3BED00835E3E /* LoginWindow.xib */,
+				F511AADC17A045710039A578 /* AboutWindow.xib */,
+				F511AAD917A0456C0039A578 /* Preferences.xib */,
+				F511AAD317A045640039A578 /* MainWindow.xib */,
+				F511AAD617A045680039A578 /* LoginWindow.xib */,
 			);
 			name = Windows;
 			sourceTree = "<group>";
@@ -703,20 +703,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F53CE14F179F3BED00835E3E /* AboutWindow.xib in Resources */,
-				F53CE150179F3BED00835E3E /* BootstrapSheet.xib in Resources */,
-				F53CE151179F3BED00835E3E /* General.xib in Resources */,
-				F53CE152179F3BED00835E3E /* Interface.xib in Resources */,
-				F53CE153179F3BED00835E3E /* MainMenu.xib in Resources */,
-				F53CE154179F3BED00835E3E /* Network.xib in Resources */,
-				F53CE155179F3BED00835E3E /* Preferences.xib in Resources */,
-				F53CE156179F3BED00835E3E /* AddFriend.xib in Resources */,
-				F53CE157179F3BED00835E3E /* Conversation.xib in Resources */,
-				F53CE158179F3BED00835E3E /* FriendCell.xib in Resources */,
-				F53CE159179F3BED00835E3E /* RequestsList.xib in Resources */,
-				F53CE15B179F3BED00835E3E /* MainWindow.xib in Resources */,
-				F53CE15C179F3BED00835E3E /* RequestCell.xib in Resources */,
-				F53CE15D179F3BED00835E3E /* LoginWindow.xib in Resources */,
+				F511AADA17A045710039A578 /* AboutWindow.xib in Resources */,
+				F511AACE17A045280039A578 /* BootstrapSheet.xib in Resources */,
+				F511AAC817A0451E0039A578 /* General.xib in Resources */,
+				F511AAC217A045170039A578 /* Interface.xib in Resources */,
+				F511AABF17A045110039A578 /* MainMenu.xib in Resources */,
+				F511AAC517A0451B0039A578 /* Network.xib in Resources */,
+				F511AAD717A0456C0039A578 /* Preferences.xib in Resources */,
+				F511AACB17A045240039A578 /* AddFriend.xib in Resources */,
+				F511AABC17A0450B0039A578 /* Conversation.xib in Resources */,
+				F511AAB917A045060039A578 /* FriendCell.xib in Resources */,
+				F511AAB317A044F10039A578 /* RequestsList.xib in Resources */,
+				F511AAD117A045640039A578 /* MainWindow.xib in Resources */,
+				F511AAB617A044FC0039A578 /* RequestCell.xib in Resources */,
+				F511AAD417A045680039A578 /* LoginWindow.xib in Resources */,
 				F53CE1E5179F3D5E00835E3E /* InfoPlist.strings in Resources */,
 				F53CE1E6179F3D5E00835E3E /* Localizable.strings in Resources */,
 				F53CE1E8179F3DEB00835E3E /* Poison.iconset in Resources */,
@@ -786,6 +786,118 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F511AAB517A044F10039A578 /* RequestsList.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AAB417A044F10039A578 /* en */,
+			);
+			name = RequestsList.xib;
+			sourceTree = "<group>";
+		};
+		F511AAB817A044FC0039A578 /* RequestCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AAB717A044FC0039A578 /* en */,
+			);
+			name = RequestCell.xib;
+			sourceTree = "<group>";
+		};
+		F511AABB17A045060039A578 /* FriendCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AABA17A045060039A578 /* en */,
+			);
+			name = FriendCell.xib;
+			sourceTree = "<group>";
+		};
+		F511AABE17A0450B0039A578 /* Conversation.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AABD17A0450B0039A578 /* en */,
+			);
+			name = Conversation.xib;
+			sourceTree = "<group>";
+		};
+		F511AAC117A045110039A578 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AAC017A045110039A578 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F511AAC417A045170039A578 /* Interface.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AAC317A045170039A578 /* en */,
+			);
+			name = Interface.xib;
+			sourceTree = "<group>";
+		};
+		F511AAC717A0451B0039A578 /* Network.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AAC617A0451B0039A578 /* en */,
+			);
+			name = Network.xib;
+			sourceTree = "<group>";
+		};
+		F511AACA17A0451E0039A578 /* General.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AAC917A0451E0039A578 /* en */,
+			);
+			name = General.xib;
+			sourceTree = "<group>";
+		};
+		F511AACD17A045240039A578 /* AddFriend.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AACC17A045240039A578 /* en */,
+			);
+			name = AddFriend.xib;
+			sourceTree = "<group>";
+		};
+		F511AAD017A045280039A578 /* BootstrapSheet.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AACF17A045280039A578 /* en */,
+			);
+			name = BootstrapSheet.xib;
+			sourceTree = "<group>";
+		};
+		F511AAD317A045640039A578 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AAD217A045640039A578 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		F511AAD617A045680039A578 /* LoginWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AAD517A045680039A578 /* en */,
+			);
+			name = LoginWindow.xib;
+			sourceTree = "<group>";
+		};
+		F511AAD917A0456C0039A578 /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AAD817A0456C0039A578 /* en */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+		F511AADC17A045710039A578 /* AboutWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F511AADB17A045710039A578 /* en */,
+			);
+			name = AboutWindow.xib;
+			sourceTree = "<group>";
+		};
 		F53CE1E1179F3D5E00835E3E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (

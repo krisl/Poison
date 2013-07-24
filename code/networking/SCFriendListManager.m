@@ -107,6 +107,7 @@
     if (!visibleNick) {
         visibleNick = [theFriend publicKey];
     }
+    [cell assignFriend:_friends[row]];
     cell.nicknameLabel.stringValue = visibleNick;
     cell.userStatusLabel.stringValue = [theFriend userStatus];
     return cell;

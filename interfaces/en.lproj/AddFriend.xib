@@ -45,15 +45,17 @@
 				<string key="NSWindowClass">NSPanel</string>
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
+				<string key="NSWindowContentMinSize">{499, 237}</string>
 				<object class="NSView" key="NSWindowView" id="433035650">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<array class="NSMutableArray" key="NSSubviews">
 						<object class="NSButton" id="255491430">
 							<reference key="NSNextResponder" ref="433035650"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">289</int>
 							<string key="NSFrame">{{360, 13}, {125, 32}}</string>
 							<reference key="NSSuperview" ref="433035650"/>
+							<reference key="NSWindow"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="464914814">
@@ -78,9 +80,10 @@
 						</object>
 						<object class="NSButton" id="482549550">
 							<reference key="NSNextResponder" ref="433035650"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">289</int>
 							<string key="NSFrame">{{278, 13}, {82, 32}}</string>
 							<reference key="NSSuperview" ref="433035650"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="255491430"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -102,9 +105,10 @@
 						</object>
 						<object class="NSButton" id="837065726">
 							<reference key="NSNextResponder" ref="433035650"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">292</int>
 							<string key="NSFrame">{{14, 13}, {215, 32}}</string>
 							<reference key="NSSuperview" ref="433035650"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="482549550"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
@@ -129,6 +133,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{17, 200}, {242, 17}}</string>
 							<reference key="NSSuperview" ref="433035650"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="99358780"/>
 							<string key="NSReuseIdentifierKey">_NS:1535</string>
 							<bool key="NSEnabled">YES</bool>
@@ -162,9 +167,10 @@
 						</object>
 						<object class="NSTextField" id="99358780">
 							<reference key="NSNextResponder" ref="433035650"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">266</int>
 							<string key="NSFrame">{{20, 151}, {459, 41}}</string>
 							<reference key="NSSuperview" ref="433035650"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="882322127"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<string key="NSAntiCompressionPriority">{250, 750}</string>
@@ -197,9 +203,10 @@
 						</object>
 						<object class="NSTextField" id="58121464">
 							<reference key="NSNextResponder" ref="433035650"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">274</int>
 							<string key="NSFrame">{{20, 49}, {459, 69}}</string>
 							<reference key="NSSuperview" ref="433035650"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="837065726"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<string key="NSAntiCompressionPriority">{250, 750}</string>
@@ -226,6 +233,7 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{17, 126}, {327, 17}}</string>
 							<reference key="NSSuperview" ref="433035650"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="58121464"/>
 							<string key="NSReuseIdentifierKey">_NS:1535</string>
 							<bool key="NSEnabled">YES</bool>
@@ -244,10 +252,12 @@
 					</array>
 					<string key="NSFrameSize">{499, 237}</string>
 					<reference key="NSSuperview"/>
+					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="35173404"/>
 					<string key="NSReuseIdentifierKey">_NS:21</string>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {2560, 1418}}</string>
+				<string key="NSMinSize">{499, 259}</string>
 				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
 				<bool key="NSWindowIsRestorable">NO</bool>
 			</object>
@@ -464,7 +474,37 @@
 			<nil key="sourceID"/>
 			<int key="maxID">80</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">SCAddFriendSheetController</string>
+					<string key="superclassName">NSWindowController</string>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="cancelButton">NSButton</string>
+						<string key="keyField">NSTextField</string>
+						<string key="sendButton">NSButton</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="cancelButton">
+							<string key="name">cancelButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="keyField">
+							<string key="name">keyField</string>
+							<string key="candidateClassName">NSTextField</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="sendButton">
+							<string key="name">sendButton</string>
+							<string key="candidateClassName">NSButton</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/SCAddFriendSheetController.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">
