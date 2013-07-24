@@ -83,6 +83,18 @@
     }
 }
 
+- (IBAction)acceptSelectedRequest:(id)sender {
+    NSUInteger nowSelected = [self.listView selectedRow];
+    NSDictionary *theRequest = [[[(SCAppDelegate*)[NSApp delegate] connection] friendsManager] pendingRequests][[self.listView selectedRow]];
+    NSString *theKey = theRequest[@"publicKey"];
+    [[[(SCAppDelegate*)[NSApp delegate] connection] friendsManager] acceptPendingFriendRequestWithPublicKey:theKey];
+    if (![self numberOfRowsInListView:nil]) {
+        [self.listView setSelectedRow:-1];
+    } else {
+        [self.listView setSelectedRow:MAX(nowSelected, 1) - 1];
+    }
+}
+
 - (IBAction)trustStateChanged:(NSButton *)sender {
     [self.acceptButton setEnabled:sender.state == NSOnState ? YES : NO];
 }

@@ -35,10 +35,7 @@
 		F53CE1C7179F3CF500835E3E /* SCWBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE18B179F3CF400835E3E /* SCWBackgroundView.m */; };
 		F53CE1C8179F3CF500835E3E /* SCWelcomeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE18D179F3CF500835E3E /* SCWelcomeWindowController.m */; };
 		F53CE1C9179F3CF500835E3E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE18E179F3CF500835E3E /* main.m */; };
-		F53CE1CA179F3CF500835E3E /* SCAddFriendSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE191179F3CF500835E3E /* SCAddFriendSheetController.m */; };
 		F53CE1CB179F3CF500835E3E /* SCBootstrapSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE193179F3CF500835E3E /* SCBootstrapSheetController.m */; };
-		F53CE1CC179F3CF500835E3E /* SCChatBaseBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE195179F3CF500835E3E /* SCChatBaseBackgroundView.m */; };
-		F53CE1CD179F3CF500835E3E /* SCChatStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE197179F3CF500835E3E /* SCChatStatusView.m */; };
 		F53CE1CE179F3CF500835E3E /* SCFriendCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE199179F3CF500835E3E /* SCFriendCellView.m */; };
 		F53CE1CF179F3CF500835E3E /* SCMainChatWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE19B179F3CF500835E3E /* SCMainChatWindowController.m */; };
 		F53CE1D8179F3CF500835E3E /* SCChatContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1A6179F3CF500835E3E /* SCChatContext.m */; };
@@ -78,6 +75,9 @@
 		F595D6C4179307B100A6C4D2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595D6C3179307B100A6C4D2 /* WebKit.framework */; };
 		F595D6E417934CBF00A6C4D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595D6E317934CBF00A6C4D2 /* QuartzCore.framework */; };
 		F5F3B254179F737D00DC9B54 /* shiina.iconset in Resources */ = {isa = PBXBuildFile; fileRef = F5F3B253179F737D00DC9B54 /* shiina.iconset */; };
+		F5F3B25A179F79F600DC9B54 /* SCChatBaseBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F3B258179F79F600DC9B54 /* SCChatBaseBackgroundView.m */; };
+		F5F3B25C179F79FC00DC9B54 /* SCChatStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F3B25B179F79FC00DC9B54 /* SCChatStatusView.m */; };
+		F5F3B25E179F7A1400DC9B54 /* SCAddFriendSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F3B256179F79D600DC9B54 /* SCAddFriendSheetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,14 +124,8 @@
 		F53CE18C179F3CF500835E3E /* SCWelcomeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWelcomeWindowController.h; sourceTree = "<group>"; };
 		F53CE18D179F3CF500835E3E /* SCWelcomeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWelcomeWindowController.m; sourceTree = "<group>"; };
 		F53CE18E179F3CF500835E3E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F53CE190179F3CF500835E3E /* SCAddFriendSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCAddFriendSheetController.h; path = ../main_window/SCAddFriendSheetController.h; sourceTree = "<group>"; };
-		F53CE191179F3CF500835E3E /* SCAddFriendSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCAddFriendSheetController.m; path = ../main_window/SCAddFriendSheetController.m; sourceTree = "<group>"; };
 		F53CE192179F3CF500835E3E /* SCBootstrapSheetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBootstrapSheetController.h; sourceTree = "<group>"; };
 		F53CE193179F3CF500835E3E /* SCBootstrapSheetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBootstrapSheetController.m; sourceTree = "<group>"; };
-		F53CE194179F3CF500835E3E /* SCChatBaseBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCChatBaseBackgroundView.h; path = ../main_window/SCChatBaseBackgroundView.h; sourceTree = "<group>"; };
-		F53CE195179F3CF500835E3E /* SCChatBaseBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCChatBaseBackgroundView.m; path = ../main_window/SCChatBaseBackgroundView.m; sourceTree = "<group>"; };
-		F53CE196179F3CF500835E3E /* SCChatStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCChatStatusView.h; path = ../main_window/SCChatStatusView.h; sourceTree = "<group>"; };
-		F53CE197179F3CF500835E3E /* SCChatStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCChatStatusView.m; path = ../main_window/SCChatStatusView.m; sourceTree = "<group>"; };
 		F53CE198179F3CF500835E3E /* SCFriendCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFriendCellView.h; sourceTree = "<group>"; };
 		F53CE199179F3CF500835E3E /* SCFriendCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFriendCellView.m; sourceTree = "<group>"; };
 		F53CE19A179F3CF500835E3E /* SCMainChatWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMainChatWindowController.h; sourceTree = "<group>"; };
@@ -230,6 +224,12 @@
 		F595D6E317934CBF00A6C4D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F5F3B252179F504400DC9B54 /* Poison.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Poison.entitlements; sourceTree = SOURCE_ROOT; };
 		F5F3B253179F737D00DC9B54 /* shiina.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = shiina.iconset; path = art/shiina.iconset; sourceTree = SOURCE_ROOT; };
+		F5F3B255179F79D600DC9B54 /* SCAddFriendSheetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAddFriendSheetController.h; sourceTree = "<group>"; };
+		F5F3B256179F79D600DC9B54 /* SCAddFriendSheetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAddFriendSheetController.m; sourceTree = "<group>"; };
+		F5F3B257179F79F600DC9B54 /* SCChatBaseBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChatBaseBackgroundView.h; sourceTree = "<group>"; };
+		F5F3B258179F79F600DC9B54 /* SCChatBaseBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChatBaseBackgroundView.m; sourceTree = "<group>"; };
+		F5F3B259179F79F600DC9B54 /* SCChatStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCChatStatusView.h; sourceTree = "<group>"; };
+		F5F3B25B179F79FC00DC9B54 /* SCChatStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCChatStatusView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,8 +342,8 @@
 		F53CE16A179F3CF400835E3E /* add_friend */ = {
 			isa = PBXGroup;
 			children = (
-				F53CE190179F3CF500835E3E /* SCAddFriendSheetController.h */,
-				F53CE191179F3CF500835E3E /* SCAddFriendSheetController.m */,
+				F5F3B255179F79D600DC9B54 /* SCAddFriendSheetController.h */,
+				F5F3B256179F79D600DC9B54 /* SCAddFriendSheetController.m */,
 			);
 			path = add_friend;
 			sourceTree = "<group>";
@@ -366,10 +366,10 @@
 		F53CE178179F3CF400835E3E /* conversation_view */ = {
 			isa = PBXGroup;
 			children = (
-				F53CE194179F3CF500835E3E /* SCChatBaseBackgroundView.h */,
-				F53CE195179F3CF500835E3E /* SCChatBaseBackgroundView.m */,
-				F53CE196179F3CF500835E3E /* SCChatStatusView.h */,
-				F53CE197179F3CF500835E3E /* SCChatStatusView.m */,
+				F5F3B257179F79F600DC9B54 /* SCChatBaseBackgroundView.h */,
+				F5F3B258179F79F600DC9B54 /* SCChatBaseBackgroundView.m */,
+				F5F3B259179F79F600DC9B54 /* SCChatStatusView.h */,
+				F5F3B25B179F79FC00DC9B54 /* SCChatStatusView.m */,
 				F53CE179179F3CF400835E3E /* SCConversationViewController.h */,
 				F53CE17A179F3CF400835E3E /* SCConversationViewController.m */,
 			);
@@ -752,6 +752,7 @@
 				F54C6DBA17923B1700880937 /* PXListViewCell.m in Sources */,
 				F53CE1B8179F3CF500835E3E /* SCAppDelegate.m in Sources */,
 				F53CE1B9179F3CF500835E3E /* SCAboutWindowController.m in Sources */,
+				F5F3B25E179F7A1400DC9B54 /* SCAddFriendSheetController.m in Sources */,
 				F53CE1BB179F3CF500835E3E /* SCChromeBGView.m in Sources */,
 				F53CE1BC179F3CF500835E3E /* SCDarkChromeBGView.m in Sources */,
 				F53CE1BE179F3CF500835E3E /* SCPublicKeyFormatter.m in Sources */,
@@ -764,10 +765,7 @@
 				F53CE1C7179F3CF500835E3E /* SCWBackgroundView.m in Sources */,
 				F53CE1C8179F3CF500835E3E /* SCWelcomeWindowController.m in Sources */,
 				F53CE1C9179F3CF500835E3E /* main.m in Sources */,
-				F53CE1CA179F3CF500835E3E /* SCAddFriendSheetController.m in Sources */,
 				F53CE1CB179F3CF500835E3E /* SCBootstrapSheetController.m in Sources */,
-				F53CE1CC179F3CF500835E3E /* SCChatBaseBackgroundView.m in Sources */,
-				F53CE1CD179F3CF500835E3E /* SCChatStatusView.m in Sources */,
 				F53CE1CE179F3CF500835E3E /* SCFriendCellView.m in Sources */,
 				F53CE1CF179F3CF500835E3E /* SCMainChatWindowController.m in Sources */,
 				F53CE1D8179F3CF500835E3E /* SCChatContext.m in Sources */,
@@ -784,6 +782,8 @@
 				F53CE224179F3E5F00835E3E /* friend_requests.c in Sources */,
 				F53CE225179F3E5F00835E3E /* net_crypto.c in Sources */,
 				F53CE226179F3E5F00835E3E /* network.c in Sources */,
+				F5F3B25A179F79F600DC9B54 /* SCChatBaseBackgroundView.m in Sources */,
+				F5F3B25C179F79FC00DC9B54 /* SCChatStatusView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

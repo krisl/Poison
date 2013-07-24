@@ -9,17 +9,18 @@
     uint8_t *_publicKey;
 }
 
-- (instancetype)initWithFriendID:(int)theID {
+- (instancetype) CALLS_INTO_CORE_FUNCTIONS initWithFriendID:(int)theID {
     self = [super init];
     if (self) {
         _friendID = theID;
         _publicKey = malloc(crypto_box_PUBLICKEYBYTES);
-        
+        _userStatus = NSLocalizedString(@"Offline", @"");
+        getclient_id(theID, _publicKey);
     }
     return self;
 }
 
-- (BOOL)sendMessage:(NSString *)message {
+- (BOOL) CALLS_INTO_CORE_FUNCTIONS sendMessage:(NSString *)message {
     NSArray *words = [message componentsSeparatedByString:@" "];
     NSUInteger len = 0;
     uint8_t *theBuffer = NULL;

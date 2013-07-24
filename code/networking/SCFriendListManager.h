@@ -8,9 +8,12 @@
 
 @interface SCFriendListManager : NSObject <PXListViewDelegate>
 
+@property (readonly) NSArray *friends;
+@property (readonly) NSArray *pendingRequests;
+
 - (instancetype)initWithConnection:(SCTOXNetworkConnection *)connection;
-- (NSArray *)pendingRequests;
 - (void)addPendingFriendRequestWithPublicKey:(NSString *)publicKey message:(NSString *)theMessage;
+- (void)acceptPendingFriendRequestWithPublicKey:(NSString *)theKey;
 - (void)removePendingFriendRequestWithPublicKey:(NSString *)theKey;
 
 @end

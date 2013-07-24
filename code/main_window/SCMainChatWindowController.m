@@ -37,6 +37,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setStatusOnline:) name:@"BootstrapDidComplete" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setStatusOffline:) name:@"NetworkDidDisconnect" object:appDelegate.connection];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(deleteFriendAtCellIndex:) name:@"DeleteFriendAtCellIndex" object:nil];
+    
     //self.backgroundView.backgroundColor = [NSColor colorWithCalibratedRed:0.8824 green:0.8980 blue:0.9294 alpha:1.0000];
 }
 
@@ -49,6 +50,7 @@
     self.friendsList.delegate = [[(SCAppDelegate*)[NSApp delegate] connection] friendsManager];
     [self.friendsList reloadData];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateFriendRequestCount:) name:@"UpdateFriendRequestCount" object:[[(SCAppDelegate*)[NSApp delegate] connection] friendsManager]];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(needToUpdateFriendList:) name:@"UpdateFriendListView" object:[[(SCAppDelegate*)[NSApp delegate] connection] friendsManager]];
     chatView = [[SCConversationViewController alloc] initWithNibName:@"Conversation" bundle:[NSBundle mainBundle]];
     [chatView loadView];
     chatView.bottomBar.roundsLeftCorner = NO;
@@ -67,6 +69,10 @@
 
 - (void)updateFriendRequestCount:(NSNotification *)notification {
     [self.friendRequestsCount setStringValue:[NSString stringWithFormat:@"%lli", [notification.userInfo[@"newCount"] longLongValue]]];
+}
+
+- (void)needToUpdateFriendList:(NSNotification *)notification {
+    [self.friendsList reloadData];
 }
 
 - (void)bootstrappingDidFail:(NSNotification*)notification {
