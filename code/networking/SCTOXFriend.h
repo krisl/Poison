@@ -8,7 +8,7 @@ typedef enum SCTOXFriendStatus {
     SCTOXFriendStatusConfirmed = 3,
     SCTOXFriendStatusRequestSent = 2,
     SCTOXFriendStatusAdded = 1,
-    SCTOXFriendStatusNonexistent = 0;
+    SCTOXFriendStatusNonexistent = 0,
 } SCTOXFriendStatus;
 
 @interface SCTOXFriend : NSObject
