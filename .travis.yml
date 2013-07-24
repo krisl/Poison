@@ -10,10 +10,14 @@ before_script:
   - cd ..
 
 notifications:
-  email: true
+  email:
+    recipients:
+      - "stal+builds@pyboard.net"
+    on_success: always
+    on_failure: always
 
   irc:
     channels:
-      - "areskeia.datnode.net#zodiac"
+      - "irc.datnode.net#zodiac"
     on_success: always
     on_failure: always

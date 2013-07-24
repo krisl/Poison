@@ -13,6 +13,7 @@
     [super windowDidLoad];
     [self.versionLabel setStringValue:[NSString stringWithFormat:@"%@ %@", [[NSBundle mainBundle] infoDictionary][@"CFBundleName"], [[NSBundle mainBundle] infoDictionary][@"CFBundleShortVersionString"]]];
     [[self.nameField.cell fieldEditorForView:self.nameField] setInsertionPointColor:[NSColor whiteColor]];
+    [self.nameField setBackgroundColor:[NSColor colorWithCalibratedWhite:0.15 alpha:1.0]];
 }
 
 - (IBAction)returnPressed:(id)sender {

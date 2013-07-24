@@ -78,6 +78,7 @@
     [[[(SCAppDelegate*)[NSApp delegate] connection] friendsManager] removePendingFriendRequestWithPublicKey:theKey];
     if (![self numberOfRowsInListView:nil]) {
         [self.listView setSelectedRow:-1];
+        [NSApp endSheet:self.window]; // if there are no more requests, we can close the sheet for them
     } else {
         [self.listView setSelectedRow:MAX(nowSelected, 1) - 1];
     }
@@ -90,6 +91,7 @@
     [[[(SCAppDelegate*)[NSApp delegate] connection] friendsManager] acceptPendingFriendRequestWithPublicKey:theKey];
     if (![self numberOfRowsInListView:nil]) {
         [self.listView setSelectedRow:-1];
+        [NSApp endSheet:self.window]; // if there are no more requests, we can close the sheet for them
     } else {
         [self.listView setSelectedRow:MAX(nowSelected, 1) - 1];
     }

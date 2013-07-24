@@ -50,6 +50,7 @@
 						<int key="NSvFlags">268</int>
 						<string key="NSFrame">{{53, 18}, {193, 18}}</string>
 						<reference key="NSSuperview" ref="1005"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="NSEnabled">YES</bool>
 						<object class="NSButtonCell" key="NSCell" id="26085038">
@@ -108,7 +109,7 @@
 					<object class="NSTextField" id="1063297648">
 						<reference key="NSNextResponder" ref="1005"/>
 						<int key="NSvFlags">268</int>
-						<string key="NSFrame">{{34, 92}, {293, 17}}</string>
+						<string key="NSFrame">{{34, 92}, {134, 17}}</string>
 						<reference key="NSSuperview" ref="1005"/>
 						<reference key="NSNextKeyView" ref="199507525"/>
 						<string key="NSReuseIdentifierKey">_NS:1535</string>
@@ -116,7 +117,7 @@
 						<object class="NSTextFieldCell" key="NSCell" id="21900661">
 							<int key="NSCellFlags">68157504</int>
 							<int key="NSCellFlags2">272630784</int>
-							<string key="NSContents">Use Notification Center for (OS X 10.8+ only):</string>
+							<string key="NSContents">Send a notification...</string>
 							<reference key="NSSupport" ref="920059678"/>
 							<string key="NSCellIdentifier">_NS:1535</string>
 							<reference key="NSControlView" ref="1063297648"/>
@@ -544,7 +545,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">125</int>
+			<int key="maxID">133</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
