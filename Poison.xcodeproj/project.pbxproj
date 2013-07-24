@@ -42,9 +42,6 @@
 		F53CE1D9179F3CF500835E3E /* SCFriendListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1A8179F3CF500835E3E /* SCFriendListManager.m */; };
 		F53CE1DA179F3CF500835E3E /* SCTOXFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1AA179F3CF500835E3E /* SCTOXFriend.m */; };
 		F53CE1DB179F3CF500835E3E /* SCTOXNetworkConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1AC179F3CF500835E3E /* SCTOXNetworkConnection.m */; };
-		F53CE1DC179F3CF500835E3E /* SCGeneralPrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1B0179F3CF500835E3E /* SCGeneralPrefPaneController.m */; };
-		F53CE1DD179F3CF500835E3E /* SCInterfacePrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1B2179F3CF500835E3E /* SCInterfacePrefPaneController.m */; };
-		F53CE1DE179F3CF500835E3E /* SCNetworkPrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1B4179F3CF500835E3E /* SCNetworkPrefPaneController.m */; };
 		F53CE1DF179F3CF500835E3E /* SCPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53CE1B6179F3CF500835E3E /* SCPreferencesWindowController.m */; };
 		F53CE1E5179F3D5E00835E3E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53CE1E1179F3D5E00835E3E /* InfoPlist.strings */; };
 		F53CE1E6179F3D5E00835E3E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53CE1E3179F3D5E00835E3E /* Localizable.strings */; };
@@ -72,6 +69,9 @@
 		F54C6DB817923B1700880937 /* PXListView.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C6DAE17923B1700880937 /* PXListView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F54C6DB917923B1700880937 /* PXListView+UserInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C6DB117923B1700880937 /* PXListView+UserInteraction.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		F54C6DBA17923B1700880937 /* PXListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F54C6DB317923B1700880937 /* PXListViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F55B5AA4179F8DFB009A3829 /* SCGeneralPrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55B5A9F179F8DFB009A3829 /* SCGeneralPrefPaneController.m */; };
+		F55B5AA5179F8DFB009A3829 /* SCInterfacePrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55B5AA1179F8DFB009A3829 /* SCInterfacePrefPaneController.m */; };
+		F55B5AA6179F8DFB009A3829 /* SCNetworkPrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = F55B5AA3179F8DFB009A3829 /* SCNetworkPrefPaneController.m */; };
 		F595D6C4179307B100A6C4D2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595D6C3179307B100A6C4D2 /* WebKit.framework */; };
 		F595D6E417934CBF00A6C4D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F595D6E317934CBF00A6C4D2 /* QuartzCore.framework */; };
 		F5F3B254179F737D00DC9B54 /* shiina.iconset in Resources */ = {isa = PBXBuildFile; fileRef = F5F3B253179F737D00DC9B54 /* shiina.iconset */; };
@@ -138,12 +138,6 @@
 		F53CE1AA179F3CF500835E3E /* SCTOXFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTOXFriend.m; sourceTree = "<group>"; };
 		F53CE1AB179F3CF500835E3E /* SCTOXNetworkConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTOXNetworkConnection.h; sourceTree = "<group>"; };
 		F53CE1AC179F3CF500835E3E /* SCTOXNetworkConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTOXNetworkConnection.m; sourceTree = "<group>"; };
-		F53CE1AF179F3CF500835E3E /* SCGeneralPrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCGeneralPrefPaneController.h; path = ../preferences_window/SCGeneralPrefPaneController.h; sourceTree = "<group>"; };
-		F53CE1B0179F3CF500835E3E /* SCGeneralPrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCGeneralPrefPaneController.m; path = ../preferences_window/SCGeneralPrefPaneController.m; sourceTree = "<group>"; };
-		F53CE1B1179F3CF500835E3E /* SCInterfacePrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCInterfacePrefPaneController.h; path = ../preferences_window/SCInterfacePrefPaneController.h; sourceTree = "<group>"; };
-		F53CE1B2179F3CF500835E3E /* SCInterfacePrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCInterfacePrefPaneController.m; path = ../preferences_window/SCInterfacePrefPaneController.m; sourceTree = "<group>"; };
-		F53CE1B3179F3CF500835E3E /* SCNetworkPrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCNetworkPrefPaneController.h; path = ../preferences_window/SCNetworkPrefPaneController.h; sourceTree = "<group>"; };
-		F53CE1B4179F3CF500835E3E /* SCNetworkPrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCNetworkPrefPaneController.m; path = ../preferences_window/SCNetworkPrefPaneController.m; sourceTree = "<group>"; };
 		F53CE1B5179F3CF500835E3E /* SCPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPreferencesWindowController.h; sourceTree = "<group>"; };
 		F53CE1B6179F3CF500835E3E /* SCPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPreferencesWindowController.m; sourceTree = "<group>"; };
 		F53CE1E2179F3D5E00835E3E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -220,6 +214,12 @@
 		F54C6DB417923B1700880937 /* PXListViewCell+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PXListViewCell+Private.h"; path = "PXListView/Classes/PXListViewCell+Private.h"; sourceTree = SOURCE_ROOT; };
 		F54C6DB517923B1700880937 /* PXListViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PXListViewDelegate.h; path = PXListView/Classes/PXListViewDelegate.h; sourceTree = SOURCE_ROOT; };
 		F54C6DB617923B1700880937 /* PXListViewDropHighlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PXListViewDropHighlight.h; path = PXListView/Classes/PXListViewDropHighlight.h; sourceTree = SOURCE_ROOT; };
+		F55B5A9E179F8DFB009A3829 /* SCGeneralPrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGeneralPrefPaneController.h; sourceTree = "<group>"; };
+		F55B5A9F179F8DFB009A3829 /* SCGeneralPrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGeneralPrefPaneController.m; sourceTree = "<group>"; };
+		F55B5AA0179F8DFB009A3829 /* SCInterfacePrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInterfacePrefPaneController.h; sourceTree = "<group>"; };
+		F55B5AA1179F8DFB009A3829 /* SCInterfacePrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInterfacePrefPaneController.m; sourceTree = "<group>"; };
+		F55B5AA2179F8DFB009A3829 /* SCNetworkPrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNetworkPrefPaneController.h; sourceTree = "<group>"; };
+		F55B5AA3179F8DFB009A3829 /* SCNetworkPrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNetworkPrefPaneController.m; sourceTree = "<group>"; };
 		F595D6C3179307B100A6C4D2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F595D6E317934CBF00A6C4D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F5F3B252179F504400DC9B54 /* Poison.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Poison.entitlements; sourceTree = SOURCE_ROOT; };
@@ -440,12 +440,12 @@
 		F53CE1AD179F3CF500835E3E /* preference_panes */ = {
 			isa = PBXGroup;
 			children = (
-				F53CE1AF179F3CF500835E3E /* SCGeneralPrefPaneController.h */,
-				F53CE1B0179F3CF500835E3E /* SCGeneralPrefPaneController.m */,
-				F53CE1B1179F3CF500835E3E /* SCInterfacePrefPaneController.h */,
-				F53CE1B2179F3CF500835E3E /* SCInterfacePrefPaneController.m */,
-				F53CE1B3179F3CF500835E3E /* SCNetworkPrefPaneController.h */,
-				F53CE1B4179F3CF500835E3E /* SCNetworkPrefPaneController.m */,
+				F55B5A9E179F8DFB009A3829 /* SCGeneralPrefPaneController.h */,
+				F55B5A9F179F8DFB009A3829 /* SCGeneralPrefPaneController.m */,
+				F55B5AA0179F8DFB009A3829 /* SCInterfacePrefPaneController.h */,
+				F55B5AA1179F8DFB009A3829 /* SCInterfacePrefPaneController.m */,
+				F55B5AA2179F8DFB009A3829 /* SCNetworkPrefPaneController.h */,
+				F55B5AA3179F8DFB009A3829 /* SCNetworkPrefPaneController.m */,
 			);
 			path = preference_panes;
 			sourceTree = "<group>";
@@ -772,9 +772,6 @@
 				F53CE1D9179F3CF500835E3E /* SCFriendListManager.m in Sources */,
 				F53CE1DA179F3CF500835E3E /* SCTOXFriend.m in Sources */,
 				F53CE1DB179F3CF500835E3E /* SCTOXNetworkConnection.m in Sources */,
-				F53CE1DC179F3CF500835E3E /* SCGeneralPrefPaneController.m in Sources */,
-				F53CE1DD179F3CF500835E3E /* SCInterfacePrefPaneController.m in Sources */,
-				F53CE1DE179F3CF500835E3E /* SCNetworkPrefPaneController.m in Sources */,
 				F53CE1DF179F3CF500835E3E /* SCPreferencesWindowController.m in Sources */,
 				F53CE221179F3E5E00835E3E /* DHT.c in Sources */,
 				F53CE222179F3E5F00835E3E /* Lossless_UDP.c in Sources */,
@@ -784,6 +781,9 @@
 				F53CE226179F3E5F00835E3E /* network.c in Sources */,
 				F5F3B25A179F79F600DC9B54 /* SCChatBaseBackgroundView.m in Sources */,
 				F5F3B25C179F79FC00DC9B54 /* SCChatStatusView.m in Sources */,
+				F55B5AA4179F8DFB009A3829 /* SCGeneralPrefPaneController.m in Sources */,
+				F55B5AA5179F8DFB009A3829 /* SCInterfacePrefPaneController.m in Sources */,
+				F55B5AA6179F8DFB009A3829 /* SCNetworkPrefPaneController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,7 +796,8 @@
 				F53CE1E2179F3D5E00835E3E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
+			path = localizable;
+			sourceTree = SOURCE_ROOT;
 		};
 		F53CE1E3179F3D5E00835E3E /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
@@ -804,7 +805,8 @@
 				F53CE1E4179F3D5E00835E3E /* en */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
+			path = localizable;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
