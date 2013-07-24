@@ -229,6 +229,7 @@
 		F54C6DB617923B1700880937 /* PXListViewDropHighlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PXListViewDropHighlight.h; path = PXListView/Classes/PXListViewDropHighlight.h; sourceTree = SOURCE_ROOT; };
 		F595D6C3179307B100A6C4D2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F595D6E317934CBF00A6C4D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F5F3B252179F504400DC9B54 /* Poison.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Poison.entitlements; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +249,7 @@
 		F53CE13D179F3B6E00835E3E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F5F3B252179F504400DC9B54 /* Poison.entitlements */,
 				F53CE290179F408700835E3E /* Images */,
 				F53CE163179F3CF400835E3E /* Poison-Info.plist */,
 				F53CE1E7179F3DEB00835E3E /* Poison.iconset */,
@@ -869,6 +871,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = Poison.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "code/Poison-Prefix.pch";
@@ -893,6 +896,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = Poison.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "code/Poison-Prefix.pch";

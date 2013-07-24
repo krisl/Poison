@@ -50,7 +50,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateFriendRequestCount:) name:@"UpdateFriendRequestCount" object:[[(SCAppDelegate*)[NSApp delegate] connection] friendsManager]];
     chatView = [[SCConversationViewController alloc] initWithNibName:@"Conversation" bundle:[NSBundle mainBundle]];
     [chatView loadView];
-    chatView.bottomBar.roundsLeftCorner = YES;
+    chatView.bottomBar.roundsLeftCorner = NO;
     chatView.bottomBar.roundsRightCorner = YES;
     //[self.window setFrame:(NSRect){self.window.frame.origin, {self.window.frame.size.width + 500, self.window.frame.size.height}} display:NO animate:YES];
     [self.splitView addSubview:chatView.view];

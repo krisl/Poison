@@ -44,7 +44,7 @@
 }
 
 - (void)mouseDragged:(NSEvent *)theEvent {
-    if (!self.doesNotMoveWindow) {
+    if (self.doesNotMoveWindow) {
         return;
     } else {
         NSRect screenVisibleFrame = [[NSScreen mainScreen] visibleFrame];

@@ -25,6 +25,7 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self andSelector:@selector(handleURLEvent:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
     if ([NSEvent modifierFlags] & NSAlternateKeyMask) {
         NSLog(@"will forget stuff");
         self.shouldForgetEverything = YES;
@@ -76,6 +77,23 @@
 - (void)didConnectSuccessfully:(NSNotification*)notification {
     isConnected = YES;
     [[chatWindow window] setTitle:[NSString stringWithFormat:@"%@: %@", [[NSBundle mainBundle] infoDictionary][@"CFBundleName"], NSLocalizedString(@"Connected!", @"")]];
+}
+
+#pragma mark - Outsde Event Handlers
+
+- (void)handleURLEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent {
+    NSString* url = [[event paramDescriptorForKeyword:keyDirectObject] stringValue];
+    NSLog(@"%@", url);
+}
+
+- (BOOL)application:(NSApplication*)app openFile:(NSString *)filename {
+    NSLog(@"Opening file %@", filename);
+    return YES;
+}
+
+- (void)handleOpenDocumentEvent:(NSAppleEventDescriptor*)event withReplyEvent:(NSAppleEventDescriptor*)replyEvent {
+    NSString* url = [[event paramDescriptorForKeyword:keyDirectObject] stringValue];
+    NSLog(@"%@", url);
 }
 
 #pragma mark - Connection
