@@ -57,7 +57,7 @@
         const char *tempNick = [nickname UTF8String];
         setname((uint8_t*)tempNick, [nickname lengthOfBytesUsingEncoding:NSUTF8StringEncoding]);
         m_set_userstatus((uint8_t*)"Online", 7);
-        dispatch_async(dispatch_get_main_queue(), ^{
+        dispatch_sync(dispatch_get_main_queue(), ^{
             [[NSNotificationCenter defaultCenter] postNotificationName:@"NetworkDidConnect" object:self userInfo:nil];
         });
         m_callback_namechange(SCDeepEndNameChanged);

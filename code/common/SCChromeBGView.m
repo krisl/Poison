@@ -107,4 +107,8 @@
     [highlightGrad drawInBezierPath:topShadow angle:0];
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 @end
