@@ -40,7 +40,6 @@
     nickname = nil;
 }
 
-
 - (void) CALLS_INTO_CORE_FUNCTIONS messengerRunLoop {
     // todo: more gcd
     @autoreleasepool {
@@ -55,6 +54,9 @@
         bootstrapInfo.port = (uint16_t)htons(bsPort);
         bootstrapInfo.padding = 0;
         initMessenger();
+        const char *tempNick = [nickname UTF8String];
+        setname((uint8_t*)tempNick, [nickname lengthOfBytesUsingEncoding:NSUTF8StringEncoding]);
+        m_set_userstatus((uint8_t*)"Online", 7);
         dispatch_async(dispatch_get_main_queue(), ^{
             [[NSNotificationCenter defaultCenter] postNotificationName:@"NetworkDidConnect" object:self userInfo:nil];
         });

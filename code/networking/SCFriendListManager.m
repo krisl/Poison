@@ -128,4 +128,9 @@
 - (BOOL)listView:(PXListView *)aListView acceptDrop:(id<NSDraggingInfo>)info row:(NSUInteger)row dropHighlight:(PXListViewDropHighlight)dropHighlight {
     return YES;
 }
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 @end
