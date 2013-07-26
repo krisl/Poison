@@ -23,4 +23,4 @@ You can also build manually. Just run ``xcodebuild``.
 
 All assets used in Poison, with the exception of icons and PXListView, are licensed under GPLv3.  
 PXListView is licensed under New BSD, see the readme in its directory for more details.  
-If you want to use the icon for something that isn't an application, ask me on the Tox IRC. I'll probably let you use it it the use case isn't stupid. (except for the Shiina icon, I'm fairly sure that it is copyrighted and not even I am allowed to use it)
+If you want to use the icon for something that isn't an application, ask me on the Tox IRC. I'll probably let you use it if the use case isn't stupid. (except for the Shiina icon, I'm fairly sure that it is copyrighted and not even I am allowed to use it)
