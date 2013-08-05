@@ -1,3 +1,5 @@
+**Hey! You're looking at the old version of Poison. [Click here](https://github.com/stal888/Poison/tree/1.1) to look at the upcoming rewrite.**
+
 ![](https://kirara.ca/g/icon_512x512.png)
 
 ## Poison
