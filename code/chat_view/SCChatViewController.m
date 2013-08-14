@@ -62,7 +62,14 @@
 
 - (void)reloadTheme:(NSNotification *)notification {
     SCThemeManager *manager = [SCThemeManager sharedManager];
-    self.transcriptView.layer.backgroundColor = [manager backgroundColorOfCurrentTheme].CGColor;
+    NSColor * bgColor = manager.backgroundColorOfCurrentTheme;
+    if (OS_VERSION_IS_BETTER_THAN_LION)
+        self.transcriptView.layer.backgroundColor = bgColor.CGColor;
+    else {
+       CGFloat components[bgColor.numberOfComponents];
+        [bgColor getComponents:(CGFloat *)&components];
+        self.transcriptView.layer.backgroundColor = CGColorCreate(bgColor.colorSpace.CGColorSpace, components);
+    }
     NSURLRequest *request = [NSURLRequest requestWithURL:[manager baseTemplateURLOfCurrentTheme]];
     [self.transcriptView.mainFrame loadRequest:request];
 }
